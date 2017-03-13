@@ -1,0 +1,106 @@
+[
+  [
+    10,
+    {
+      "id": 10,
+      "type": "TCPWRAP",
+      "triggerId": 1,
+      "init": [
+        26129000
+      ],
+      "initStack": [
+        "at createServerHandle (net.js:1200:14)",
+        "at Server._listen2 (net.js:1244:14)",
+        "at listen (net.js:1312:10)",
+        "at Server.listen (net.js:1391:9)",
+        "at Test.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/test/one-tcp-server.listen+close.js:30:6)"
+      ],
+      "resource": {
+        "owner": {
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 3,
+          "_connections": 0,
+          "_asyncId": 10,
+          "_handle": null,
+          "_usingSlaves": false,
+          "_slaves": {
+            "type": "object",
+            "proto": "Array",
+            "val": "<deleted>"
+          },
+          "_unref": false,
+          "allowHalfOpen": false,
+          "pauseOnConnect": false,
+          "_connectionKey": {
+            "type": "string",
+            "len": 6,
+            "included": 6,
+            "val": "6::::0"
+          },
+          "proto": "Server"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/one-tcp-server.listen+close.js",
+              "line": 32,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 10,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/one-tcp-server.listen+close.js",
+              "line": 33,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 10,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/one-tcp-server.listen+close.js",
+              "line": 34,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 10,
+            "arguments": null
+          }
+        ]
+      }
+    }
+  ]
+]
