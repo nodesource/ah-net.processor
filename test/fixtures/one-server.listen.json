@@ -6,14 +6,14 @@
       "type": "TCPWRAP",
       "triggerId": 1,
       "init": [
-        23080000
+        26129000
       ],
       "initStack": [
         "at createServerHandle (net.js:1200:14)",
         "at Server._listen2 (net.js:1244:14)",
         "at listen (net.js:1312:10)",
         "at Server.listen (net.js:1391:9)",
-        "at Test.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/test/one-tcp-server.listen+close.js:31:6)"
+        "at Test.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/test/one-tcp-server.listen+close.js:30:6)"
       ],
       "resource": {
         "owner": {
@@ -100,11 +100,7 @@
             "arguments": null
           }
         ]
-      },
-      "destroy": [
-        26816000
-      ],
-      "destroyStack": []
+      }
     }
   ]
 ]
