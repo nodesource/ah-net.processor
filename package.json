@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/thlorenz/ah-net.processor",
   "dependencies": {
-    "ah-processor.utils": "~0.1.0"
+    "ah-processor.utils": "~0.2.1"
   },
   "devDependencies": {
     "ocat": "~0.1.0",

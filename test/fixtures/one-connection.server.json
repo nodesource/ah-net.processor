@@ -1,0 +1,549 @@
+[
+  [
+    2,
+    {
+      "id": 2,
+      "type": "TCPWRAP",
+      "triggerId": 1,
+      "init": [
+        6666000
+      ],
+      "initStack": [
+        "at createServerHandle (net.js:1200:14)",
+        "at Server._listen2 (net.js:1244:14)",
+        "at listen (net.js:1312:10)",
+        "at Server.listen (net.js:1391:9)",
+        "at Object.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server:24:4)"
+      ],
+      "resource": {
+        "owner": {
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 4,
+          "_connections": 1,
+          "_asyncId": 2,
+          "_handle": null,
+          "_usingSlaves": false,
+          "_slaves": {
+            "type": "object",
+            "proto": "Array",
+            "val": "<deleted>"
+          },
+          "_unref": false,
+          "allowHalfOpen": false,
+          "pauseOnConnect": false,
+          "_connectionKey": {
+            "type": "string",
+            "len": 9,
+            "included": 9,
+            "val": "6::::4444"
+          },
+          "proto": "Server"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 26,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 2,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 31,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 2,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 35,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 2,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 2,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          }
+        ]
+      },
+      "before": [
+        2010738000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        2014255000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        2017371000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    4,
+    {
+      "id": 4,
+      "type": "TCPWRAP",
+      "triggerId": 2,
+      "init": [
+        2010560000
+      ],
+      "initStack": [],
+      "resource": {
+        "owner": {
+          "connecting": false,
+          "_asyncId": 4,
+          "_hadError": false,
+          "_handle": null,
+          "_parent": null,
+          "_host": null,
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": false,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 3,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": false,
+          "allowHalfOpen": false,
+          "destroyed": true,
+          "_bytesDispatched": 0,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_idleNext": null,
+          "_idlePrev": null,
+          "_idleTimeout": -1,
+          "write": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "proto": "Socket"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 217,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 268,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 348,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 530,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 26,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 31,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 35,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 26,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 31,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/server",
+              "line": 35,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "write"
+            ],
+            "key": "write",
+            "level": 1,
+            "info": {
+              "file": "net.js",
+              "line": 294,
+              "column": 22,
+              "inferredName": "",
+              "name": "writeAfterFIN"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          }
+        ]
+      },
+      "before": [
+        2024242000,
+        2032603000
+      ],
+      "beforeStacks": [
+        [],
+        []
+      ],
+      "after": [
+        2030102000,
+        2032663000
+      ],
+      "afterStacks": [
+        [],
+        []
+      ],
+      "destroy": [
+        2032761000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    5,
+    {
+      "id": 5,
+      "type": "SHUTDOWNWRAP",
+      "triggerId": 4,
+      "init": [
+        2013624000
+      ],
+      "initStack": [
+        "at Socket.onSocketFinish (net.js:240:26)",
+        "at emitNone (events.js:86:13)",
+        "at Socket.emit (events.js:186:7)",
+        "at finishMaybe (_stream_writable.js:509:14)",
+        "at endWritable (_stream_writable.js:519:3)"
+      ],
+      "resource": null,
+      "before": [
+        2017463000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        2017721000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        2017798000
+      ],
+      "destroyStack": []
+    }
+  ]
+]
