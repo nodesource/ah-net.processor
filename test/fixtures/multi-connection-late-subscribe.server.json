@@ -1,0 +1,1229 @@
+[
+  [
+    4,
+    {
+      "id": 4,
+      "type": "TCPWRAP",
+      "triggerId": 2,
+      "init": [
+        330434000
+      ],
+      "initStack": [],
+      "resource": {
+        "owner": {
+          "connecting": false,
+          "_asyncId": 4,
+          "_hadError": false,
+          "_handle": null,
+          "_parent": null,
+          "_host": null,
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": false,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 3,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": false,
+          "allowHalfOpen": false,
+          "destroyed": true,
+          "_bytesDispatched": 0,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_idleNext": null,
+          "_idlePrev": null,
+          "_idleTimeout": -1,
+          "write": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "proto": "Socket"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 217,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 268,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 348,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 530,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 27,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 32,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 36,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_handle",
+              "onconnection"
+            ],
+            "key": "onconnection",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 1438,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 27,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 32,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 36,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 4,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_handle",
+              "onconnection"
+            ],
+            "key": "onconnection",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 1438,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "write"
+            ],
+            "key": "write",
+            "level": 1,
+            "info": {
+              "file": "net.js",
+              "line": 294,
+              "column": 22,
+              "inferredName": "",
+              "name": "writeAfterFIN"
+            },
+            "id": 4,
+            "arguments": "<Inaccessible>"
+          }
+        ]
+      },
+      "before": [
+        339014000,
+        350651000
+      ],
+      "beforeStacks": [
+        [],
+        []
+      ],
+      "after": [
+        346770000,
+        350732000
+      ],
+      "afterStacks": [
+        [],
+        []
+      ],
+      "destroy": [
+        350806000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    5,
+    {
+      "id": 5,
+      "type": "SHUTDOWNWRAP",
+      "triggerId": 4,
+      "init": [
+        333245000
+      ],
+      "initStack": [
+        "at Socket.onSocketFinish (net.js:240:26)",
+        "at emitNone (events.js:86:13)",
+        "at Socket.emit (events.js:186:7)",
+        "at finishMaybe (_stream_writable.js:509:14)",
+        "at endWritable (_stream_writable.js:519:3)"
+      ],
+      "resource": null,
+      "before": [
+        333815000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        334049000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        334326000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    9,
+    {
+      "id": 9,
+      "type": "TCPWRAP",
+      "triggerId": 2,
+      "init": [
+        512522000
+      ],
+      "initStack": [],
+      "resource": {
+        "owner": {
+          "connecting": false,
+          "_asyncId": 9,
+          "_hadError": false,
+          "_handle": null,
+          "_parent": null,
+          "_host": null,
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": false,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 3,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": false,
+          "allowHalfOpen": false,
+          "destroyed": true,
+          "_bytesDispatched": 0,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_idleNext": null,
+          "_idlePrev": null,
+          "_idleTimeout": -1,
+          "write": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "proto": "Socket"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 217,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 268,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 348,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 530,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 27,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 9,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 32,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 9,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 36,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 9,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_handle",
+              "onconnection"
+            ],
+            "key": "onconnection",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 1438,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 27,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 9,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 32,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 9,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 36,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 9,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_handle",
+              "onconnection"
+            ],
+            "key": "onconnection",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 1438,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "write"
+            ],
+            "key": "write",
+            "level": 1,
+            "info": {
+              "file": "net.js",
+              "line": 294,
+              "column": 22,
+              "inferredName": "",
+              "name": "writeAfterFIN"
+            },
+            "id": 9,
+            "arguments": "<Inaccessible>"
+          }
+        ]
+      },
+      "before": [
+        519951000,
+        521639000
+      ],
+      "beforeStacks": [
+        [],
+        []
+      ],
+      "after": [
+        520620000,
+        522266000
+      ],
+      "afterStacks": [
+        [],
+        []
+      ],
+      "destroy": [
+        522357000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    10,
+    {
+      "id": 10,
+      "type": "SHUTDOWNWRAP",
+      "triggerId": 9,
+      "init": [
+        513487000
+      ],
+      "initStack": [
+        "at Socket.onSocketFinish (net.js:240:26)",
+        "at emitNone (events.js:86:13)",
+        "at Socket.emit (events.js:186:7)",
+        "at finishMaybe (_stream_writable.js:509:14)",
+        "at endWritable (_stream_writable.js:519:3)"
+      ],
+      "resource": null,
+      "before": [
+        513628000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        514432000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        514503000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    12,
+    {
+      "id": 12,
+      "type": "TCPWRAP",
+      "triggerId": 2,
+      "init": [
+        693130000
+      ],
+      "initStack": [],
+      "resource": {
+        "owner": {
+          "connecting": false,
+          "_asyncId": 12,
+          "_hadError": false,
+          "_handle": null,
+          "_parent": null,
+          "_host": null,
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": false,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 3,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": false,
+          "allowHalfOpen": false,
+          "destroyed": true,
+          "_bytesDispatched": 0,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_idleNext": null,
+          "_idlePrev": null,
+          "_idleTimeout": -1,
+          "write": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "proto": "Socket"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 217,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 268,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 348,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 530,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 27,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 12,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 32,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 12,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 36,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 12,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "connection"
+            ],
+            "key": "connection",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 27,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 12,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 32,
+              "column": 16,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 12,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/multi-connections-late-subscribe/server",
+              "line": 36,
+              "column": 20,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 12,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "write"
+            ],
+            "key": "write",
+            "level": 1,
+            "info": {
+              "file": "net.js",
+              "line": 294,
+              "column": 22,
+              "inferredName": "",
+              "name": "writeAfterFIN"
+            },
+            "id": 12,
+            "arguments": "<Inaccessible>"
+          }
+        ]
+      },
+      "before": [
+        700872000,
+        703128000
+      ],
+      "beforeStacks": [
+        [],
+        []
+      ],
+      "after": [
+        701026000,
+        703164000
+      ],
+      "afterStacks": [
+        [],
+        []
+      ],
+      "destroy": [
+        703264000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    13,
+    {
+      "id": 13,
+      "type": "SHUTDOWNWRAP",
+      "triggerId": 12,
+      "init": [
+        693340000
+      ],
+      "initStack": [
+        "at Socket.onSocketFinish (net.js:240:26)",
+        "at emitNone (events.js:86:13)",
+        "at Socket.emit (events.js:186:7)",
+        "at finishMaybe (_stream_writable.js:509:14)",
+        "at endWritable (_stream_writable.js:519:3)"
+      ],
+      "resource": null,
+      "before": [
+        693944000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        694037000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        694105000
+      ],
+      "destroyStack": []
+    }
+  ]
+]
