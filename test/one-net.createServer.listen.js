@@ -3,7 +3,7 @@ const test = require('tape')
 const ocat = require('./utils/ocat')
 const spok = require('spok')
 
-const { NetServerListenProcessor } = require('../')
+const { TcpListenProcessor } = require('../')
 const activities = new Map(require('./fixtures/one-server.listen.json'))
 
 const LISTENID = 10
@@ -45,7 +45,7 @@ test('\nactivities for one listening server, not including activities, separatin
   const includeActivities = false
   const separateFunctions = true
   const { groups, operations } =
-    new NetServerListenProcessor({ activities, includeActivities, separateFunctions }).process()
+    new TcpListenProcessor({ activities, includeActivities, separateFunctions }).process()
 
   t.equal(groups.size, 1, 'finds one server listen group')
   const op = operations.get(LISTENID)
@@ -67,7 +67,7 @@ test('\nactivities for one listening server, not including activities, not separ
   const includeActivities = false
   const separateFunctions = false
   const { groups, operations } =
-    new NetServerListenProcessor({ activities, includeActivities, separateFunctions }).process()
+    new TcpListenProcessor({ activities, includeActivities, separateFunctions }).process()
 
   t.equal(groups.size, 1, 'finds one server listen group')
   const op = operations.get(LISTENID)
@@ -90,7 +90,7 @@ test('\nactivities for one listening server, not including activities, not separ
 test('\nactivities for one listening server, including activities', function(t) {
   const includeActivities = true
   const { groups, operations } =
-    new NetServerListenProcessor({ activities, includeActivities }).process()
+    new TcpListenProcessor({ activities, includeActivities }).process()
 
   t.equal(groups.size, 1, 'finds one server listen group')
   const op = operations.get(LISTENID)
@@ -103,7 +103,7 @@ test('\nactivities for one listening server that got closed, not including activ
   const separateFunctions = true
   const activities = new Map(require('./fixtures/one-server.listen+close.json'))
   const { groups, operations } =
-    new NetServerListenProcessor({ activities, includeActivities, separateFunctions }).process()
+    new TcpListenProcessor({ activities, includeActivities, separateFunctions }).process()
 
   t.equal(groups.size, 1, 'finds one server listen group')
   const op = operations.get(LISTENID)
@@ -121,4 +121,3 @@ test('\nactivities for one listening server that got closed, not including activ
   t.equal(typeof op.listen.activity, 'undefined', 'does not include activity for listen')
   t.end()
 })
-
