@@ -6,7 +6,7 @@
       "type": "TCPWRAP",
       "triggerId": 2,
       "init": [
-        330434000
+        497768000
       ],
       "initStack": [],
       "resource": {
@@ -48,9 +48,36 @@
             "val": ""
           },
           "server": {
-            "type": "object",
-            "proto": "Server",
-            "val": "<deleted>"
+            "domain": null,
+            "_events": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "_eventsCount": 3,
+            "_connections": 0,
+            "_asyncId": 2,
+            "_handle": {
+              "type": "object",
+              "proto": "TCP",
+              "val": "<deleted>"
+            },
+            "_usingSlaves": false,
+            "_slaves": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "_unref": false,
+            "allowHalfOpen": false,
+            "pauseOnConnect": false,
+            "_connectionKey": {
+              "type": "string",
+              "len": 9,
+              "included": 9,
+              "val": "6::::4444"
+            },
+            "proto": "Server"
           },
           "_server": {
             "type": "object",
@@ -352,23 +379,23 @@
         ]
       },
       "before": [
-        339014000,
-        350651000
+        507804000,
+        517084000
       ],
       "beforeStacks": [
         [],
         []
       ],
       "after": [
-        346770000,
-        350732000
+        513261000,
+        517179000
       ],
       "afterStacks": [
         [],
         []
       ],
       "destroy": [
-        350806000
+        517248000
       ],
       "destroyStack": []
     }
@@ -380,7 +407,7 @@
       "type": "SHUTDOWNWRAP",
       "triggerId": 4,
       "init": [
-        333245000
+        500482000
       ],
       "initStack": [
         "at Socket.onSocketFinish (net.js:240:26)",
@@ -391,19 +418,19 @@
       ],
       "resource": null,
       "before": [
-        333815000
+        501101000
       ],
       "beforeStacks": [
         []
       ],
       "after": [
-        334049000
+        501320000
       ],
       "afterStacks": [
         []
       ],
       "destroy": [
-        334326000
+        501618000
       ],
       "destroyStack": []
     }
@@ -415,7 +442,7 @@
       "type": "TCPWRAP",
       "triggerId": 2,
       "init": [
-        512522000
+        680676000
       ],
       "initStack": [],
       "resource": {
@@ -457,9 +484,36 @@
             "val": ""
           },
           "server": {
-            "type": "object",
-            "proto": "Server",
-            "val": "<deleted>"
+            "domain": null,
+            "_events": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "_eventsCount": 3,
+            "_connections": 0,
+            "_asyncId": 2,
+            "_handle": {
+              "type": "object",
+              "proto": "TCP",
+              "val": "<deleted>"
+            },
+            "_usingSlaves": false,
+            "_slaves": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "_unref": false,
+            "allowHalfOpen": false,
+            "pauseOnConnect": false,
+            "_connectionKey": {
+              "type": "string",
+              "len": 9,
+              "included": 9,
+              "val": "6::::4444"
+            },
+            "proto": "Server"
           },
           "_server": {
             "type": "object",
@@ -761,23 +815,23 @@
         ]
       },
       "before": [
-        519951000,
-        521639000
+        687354000,
+        688795000
       ],
       "beforeStacks": [
         [],
         []
       ],
       "after": [
-        520620000,
-        522266000
+        687917000,
+        689333000
       ],
       "afterStacks": [
         [],
         []
       ],
       "destroy": [
-        522357000
+        689423000
       ],
       "destroyStack": []
     }
@@ -789,7 +843,7 @@
       "type": "SHUTDOWNWRAP",
       "triggerId": 9,
       "init": [
-        513487000
+        681501000
       ],
       "initStack": [
         "at Socket.onSocketFinish (net.js:240:26)",
@@ -800,19 +854,19 @@
       ],
       "resource": null,
       "before": [
-        513628000
+        682211000
       ],
       "beforeStacks": [
         []
       ],
       "after": [
-        514432000
+        682267000
       ],
       "afterStacks": [
         []
       ],
       "destroy": [
-        514503000
+        682317000
       ],
       "destroyStack": []
     }
@@ -824,7 +878,7 @@
       "type": "TCPWRAP",
       "triggerId": 2,
       "init": [
-        693130000
+        868162000
       ],
       "initStack": [],
       "resource": {
@@ -866,9 +920,32 @@
             "val": ""
           },
           "server": {
-            "type": "object",
-            "proto": "Server",
-            "val": "<deleted>"
+            "domain": null,
+            "_events": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "_eventsCount": 4,
+            "_connections": 0,
+            "_asyncId": 2,
+            "_handle": null,
+            "_usingSlaves": false,
+            "_slaves": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "_unref": false,
+            "allowHalfOpen": false,
+            "pauseOnConnect": false,
+            "_connectionKey": {
+              "type": "string",
+              "len": 9,
+              "included": 9,
+              "val": "6::::4444"
+            },
+            "proto": "Server"
           },
           "_server": {
             "type": "object",
@@ -1170,23 +1247,23 @@
         ]
       },
       "before": [
-        700872000,
-        703128000
+        874026000,
+        875865000
       ],
       "beforeStacks": [
         [],
         []
       ],
       "after": [
-        701026000,
-        703164000
+        874164000,
+        875894000
       ],
       "afterStacks": [
         [],
         []
       ],
       "destroy": [
-        703264000
+        875952000
       ],
       "destroyStack": []
     }
@@ -1198,7 +1275,7 @@
       "type": "SHUTDOWNWRAP",
       "triggerId": 12,
       "init": [
-        693340000
+        868327000
       ],
       "initStack": [
         "at Socket.onSocketFinish (net.js:240:26)",
@@ -1209,19 +1286,19 @@
       ],
       "resource": null,
       "before": [
-        693944000
+        868758000
       ],
       "beforeStacks": [
         []
       ],
       "after": [
-        694037000
+        868811000
       ],
       "afterStacks": [
         []
       ],
       "destroy": [
-        694105000
+        869469000
       ],
       "destroyStack": []
     }

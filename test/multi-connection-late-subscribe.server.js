@@ -49,11 +49,11 @@ test('\nactivities for server that served three connections', function(t) {
   spok(t, op1,
     { $topic: 'connection 1'
     , lifeCycle:
-      { created: { ms: '330.43ms', ns: 330434000 }
-      , destroyed: { ms: '334.33ms', ns: 334326000 }
-      , timeAlive: { ms: '3.89ms', ns: 3892000 } }
+      { created: { ms: '497.77ms', ns: 497768000 }
+      , destroyed: { ms: '501.62ms', ns: 501618000 }
+      , timeAlive: { ms: '3.85ms', ns: 3850000 } }
     , createdAt: '<Unknown>'
-    , socket: { id: 4, triggerId: 2 }
+    , socket: { id: 4, triggerId: 2, connectionKey: '6::::4444' }
     , shutdown: { id: 5, triggerId: op1.socket.id }
     , userFunctions
   })
@@ -61,11 +61,11 @@ test('\nactivities for server that served three connections', function(t) {
   spok(t, op2,
     { $topic: 'connection 2'
     , lifeCycle:
-      { created: { ms: '512.52ms', ns: 512522000 }
-      , destroyed: { ms: '514.50ms', ns: 514503000 }
-      , timeAlive: { ms: '1.98ms', ns: 1981000 } }
+      { created: { ms: '680.68ms', ns: 680676000 }
+      , destroyed: { ms: '682.32ms', ns: 682317000 }
+      , timeAlive: { ms: '1.64ms', ns: 1641000 } }
     , createdAt: '<Unknown>'
-    , socket: { id: 9, triggerId: 2 }
+    , socket: { id: 9, triggerId: 2, connectionKey: '6::::4444' }
     , shutdown: { id: 10, triggerId: op2.socket.id }
     , userFunctions
   })
@@ -73,11 +73,11 @@ test('\nactivities for server that served three connections', function(t) {
   spok(t, op3,
     { $topic: 'connection 3'
     , lifeCycle:
-      { created: { ms: '693.13ms', ns: 693130000 }
-      , destroyed: { ms: '694.11ms', ns: 694105000 }
-      , timeAlive: { ms: '0.97ms', ns: 975000 } }
+      { created: { ms: '868.16ms', ns: 868162000 }
+      , destroyed: { ms: '869.47ms', ns: 869469000 }
+      , timeAlive: { ms: '1.31ms', ns: 1307000 } }
     , createdAt: '<Unknown>'
-    , socket: { id: 12, triggerId: 2 }
+    , socket: { id: 12, triggerId: 2, connectionKey: '6::::4444' }
     , shutdown: { id: 13, triggerId: op3.socket.id }
     , userFunctions
   })
