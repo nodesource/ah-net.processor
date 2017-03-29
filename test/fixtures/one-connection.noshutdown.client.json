@@ -1,0 +1,333 @@
+[
+  [
+    2,
+    {
+      "id": 2,
+      "type": "TCPWRAP",
+      "triggerId": 1,
+      "init": [
+        2605000
+      ],
+      "initStack": [
+        "at Socket.connect (net.js:932:40)",
+        "at Object.exports.connect.exports.createConnection (net.js:75:35)",
+        "at Object.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/client:19:4)",
+        "at Module._compile (module.js:571:32)",
+        "at Object.Module._extensions..js (module.js:580:10)"
+      ],
+      "resource": {
+        "owner": {
+          "connecting": false,
+          "_asyncId": 2,
+          "_hadError": false,
+          "_handle": {
+            "type": "object",
+            "proto": "TCP",
+            "val": "<deleted>"
+          },
+          "_parent": null,
+          "_host": {
+            "type": "string",
+            "len": 9,
+            "included": 9,
+            "val": "localhost"
+          },
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": true,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 4,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": false,
+          "allowHalfOpen": false,
+          "destroyed": false,
+          "_bytesDispatched": 0,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": null,
+          "_server": null,
+          "read": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_consuming": true,
+          "proto": "Socket"
+        },
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 540,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 287,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/client",
+              "line": 27,
+              "column": 14,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 2,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 217,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 268,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/client",
+              "line": 24,
+              "column": 15,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 2,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 348,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 530,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "read"
+            ],
+            "key": "read",
+            "level": 1,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 271,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 2,
+            "arguments": "<Inaccessible>"
+          }
+        ]
+      },
+      "before": [
+        11960000,
+        16692000,
+        21567000
+      ],
+      "beforeStacks": [
+        [],
+        [],
+        []
+      ],
+      "after": [
+        13246000,
+        20939000,
+        21627000
+      ],
+      "afterStacks": [
+        [],
+        [],
+        []
+      ]
+    }
+  ],
+  [
+    3,
+    {
+      "id": 3,
+      "type": "GETADDRINFOREQWRAP",
+      "triggerId": 1,
+      "init": [
+        4935000
+      ],
+      "initStack": [
+        "at lookup (dns.js:164:19)",
+        "at lookupAndConnect (net.js:1004:3)",
+        "at Socket.connect (net.js:948:5)",
+        "at Object.exports.connect.exports.createConnection (net.js:75:35)",
+        "at Object.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/client:19:4)"
+      ],
+      "resource": null,
+      "before": [
+        8126000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        8724000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        8894000
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    5,
+    {
+      "id": 5,
+      "type": "TCPCONNECTWRAP",
+      "triggerId": 3,
+      "init": [
+        8551000
+      ],
+      "initStack": [
+        "at connect (net.js:873:26)",
+        "at emitLookup (net.js:1023:7)",
+        "at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:62:16)",
+        "at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:81:10)"
+      ],
+      "resource": null,
+      "before": [
+        8952000
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        9478000
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        9536000
+      ],
+      "destroyStack": []
+    }
+  ]
+]

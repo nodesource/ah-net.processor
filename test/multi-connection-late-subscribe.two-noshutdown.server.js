@@ -4,7 +4,7 @@ const ocat = require('./utils/ocat')
 const spok = require('spok')
 
 const { TcpConnectionProcessor } = require('../')
-const activities = new Map(require('./fixtures/multi-connection-late-subscribe.server.json'))
+const activities = new Map(require('./fixtures/multi-connection-late-subscribe.two-noshutdown.server.json'))
 const CONN1ID = 4
 const CONN2ID = 9
 const CONN3ID = 12
@@ -13,7 +13,7 @@ const userFunctions = require(
   './common/multi-connection-late-subscription.user-functions'
 )
 
-test('\nactivities for server that served three connections', function(t) {
+test('\nactivities for server that served three connections, the two last ones did not shutdown', function(t) {
   const includeActivities = false
   const separateFunctions = true
   const { groups, operations } =
@@ -40,11 +40,11 @@ test('\nactivities for server that served three connections', function(t) {
     { $topic: 'connection 2'
     , lifeCycle:
       { created: { ms: '680.68ms', ns: 680676000 }
-      , destroyed: { ms: '682.32ms', ns: 682317000 }
-      , timeAlive: { ms: '1.64ms', ns: 1641000 } }
+      , destroyed: spok.notDefined
+      , timeAlive: null }
     , createdAt: '<Unknown>'
     , socket: { id: 9, triggerId: 2, connectionKey: '6::::4444' }
-    , shutdown: { id: 10, triggerId: op2.socket.id }
+    , shutdown: spok.notDefined
     , userFunctions
   })
 
@@ -52,11 +52,11 @@ test('\nactivities for server that served three connections', function(t) {
     { $topic: 'connection 3'
     , lifeCycle:
       { created: { ms: '868.16ms', ns: 868162000 }
-      , destroyed: { ms: '869.47ms', ns: 869469000 }
-      , timeAlive: { ms: '1.31ms', ns: 1307000 } }
+      , destroyed: spok.notDefined
+      , timeAlive: null }
     , createdAt: '<Unknown>'
     , socket: { id: 12, triggerId: 2, connectionKey: '6::::4444' }
-    , shutdown: { id: 13, triggerId: op3.socket.id }
+    , shutdown: spok.notDefined
     , userFunctions
   })
 
