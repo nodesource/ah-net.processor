@@ -3,6 +3,7 @@ const TcpListenProcessor = require('./lib/tcp-listen.processor')
 const TcpConnectionProcessor = require('./lib/tcp-connection.processor')
 const TcpClientConnectionProcessor = require('./lib/tcp-client-connection.processor')
 const HttpConnectionProcessor = require('./lib/http-connection.processor')
+const HttpClientConnectionProcessor = require('./lib/http-client-connection.processor')
 
 /**
  * Processes all network related activities found inside the supplied `activities`.
@@ -22,6 +23,7 @@ function process({ activities, includeActivities = false }) {
     , TcpConnectionProcessor
     , TcpClientConnectionProcessor
     , HttpConnectionProcessor
+    , HttpClientConnectionProcessor
   ]
   return processActivities({ activities, processors, includeActivities })
 }
@@ -31,5 +33,6 @@ module.exports = {
   , TcpConnectionProcessor
   , TcpClientConnectionProcessor
   , HttpConnectionProcessor
+  , HttpClientConnectionProcessor
   , process
 }

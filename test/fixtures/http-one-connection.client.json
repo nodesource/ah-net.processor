@@ -1,0 +1,6998 @@
+[
+  [
+    10,
+    {
+      "id": 10,
+      "type": "TCPWRAP",
+      "triggerId": 1,
+      "init": [
+        18110308
+      ],
+      "initStack": [
+        "at Socket.connect (net.js:980:40)",
+        "at Agent.exports.connect.exports.createConnection (net.js:104:35)",
+        "at Agent.createSocket (_http_agent.js:220:26)",
+        "at Agent.addRequest (_http_agent.js:181:10)",
+        "at new ClientRequest (_http_client.js:259:16)"
+      ],
+      "resource": {
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 2,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 2,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 2,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 10,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 10,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 10,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 6,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 7,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "unpipe"
+            ],
+            "key": "unpipe",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 521,
+              "column": 19,
+              "inferredName": "",
+              "name": "onunpipe"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 635,
+              "column": 17,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 593,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 39,
+              "column": 16,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 10,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 590,
+              "column": 22,
+              "inferredName": "",
+              "name": "responseOnEnd"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_httpMessage",
+              "res",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 571,
+              "column": 17,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "read"
+            ],
+            "key": "read",
+            "level": 1,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 10,
+            "arguments": "<Inaccessible>"
+          }
+        ],
+        "owner": {
+          "connecting": false,
+          "_asyncId": 10,
+          "_hadError": false,
+          "_handle": {
+            "bytesRead": 486,
+            "_externalStream": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "fd": 19,
+            "reading": true,
+            "owner": {
+              "type": "object",
+              "proto": "Socket",
+              "val": "<deleted>"
+            },
+            "onread": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "onconnection": null,
+            "writeQueueSize": 0,
+            "proto": "TCP"
+          },
+          "_parent": null,
+          "_host": {
+            "type": "string",
+            "len": 10,
+            "included": 10,
+            "val": "google.com"
+          },
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": true,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 8,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": true,
+          "allowHalfOpen": false,
+          "destroyed": false,
+          "_bytesDispatched": 55,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": null,
+          "_server": null,
+          "parser": null,
+          "_httpMessage": {
+            "type": "object",
+            "proto": "ClientRequest",
+            "val": "<deleted>"
+          },
+          "read": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_consuming": true,
+          "proto": "Socket"
+        }
+      },
+      "before": [
+        81161830,
+        108645996
+      ],
+      "beforeStacks": [
+        [],
+        []
+      ],
+      "after": [
+        104748476,
+        108998286
+      ],
+      "afterStacks": [
+        [],
+        []
+      ],
+      "destroy": [
+        110500315
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    11,
+    {
+      "id": 11,
+      "type": "GETADDRINFOREQWRAP",
+      "triggerId": 10,
+      "init": [
+        19747503
+      ],
+      "initStack": [
+        "at lookup (dns.js:182:19)",
+        "at lookupAndConnect (net.js:1053:3)",
+        "at Socket.connect (net.js:996:5)",
+        "at Agent.exports.connect.exports.createConnection (net.js:104:35)",
+        "at Agent.createSocket (_http_agent.js:220:26)"
+      ],
+      "resource": null,
+      "before": [
+        26118292
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        26910976
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        26996568
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    13,
+    {
+      "id": 13,
+      "type": "HTTPPARSER",
+      "triggerId": 1,
+      "init": [
+        22775877
+      ],
+      "initStack": [
+        "at FreeList.ctor (_http_common.js:170:16)",
+        "at FreeList.alloc (internal/freelist.js:13:41)",
+        "at tickOnSocket (_http_client.js:615:24)",
+        "at onSocketNT (_http_client.js:670:5)",
+        "at _combinedTickCallback (internal/process/next_tick.js:95:11)"
+      ],
+      "resource": null
+    }
+  ],
+  [
+    14,
+    {
+      "id": 14,
+      "type": "HTTPPARSER",
+      "triggerId": 1,
+      "init": [
+        22913043
+      ],
+      "initStack": [
+        "at tickOnSocket (_http_client.js:618:10)",
+        "at onSocketNT (_http_client.js:670:5)",
+        "at _combinedTickCallback (internal/process/next_tick.js:95:11)",
+        "at process._tickCallback (internal/process/next_tick.js:151:9)"
+      ],
+      "resource": {
+        "functions": [
+          {
+            "path": [
+              "socket",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 2,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 2,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 2,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 2,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 2,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 2,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 2,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 2,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 6,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 7,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "unpipe"
+            ],
+            "key": "unpipe",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 521,
+              "column": 19,
+              "inferredName": "",
+              "name": "onunpipe"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 635,
+              "column": 17,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 593,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 39,
+              "column": 16,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 590,
+              "column": 22,
+              "inferredName": "",
+              "name": "responseOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 571,
+              "column": 17,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "req",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "req",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "req",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "req",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "incoming",
+              "req",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 6,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 7,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 8,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "unpipe"
+            ],
+            "key": "unpipe",
+            "level": 7,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 521,
+              "column": 19,
+              "inferredName": "",
+              "name": "onunpipe"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 7,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 635,
+              "column": 17,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 7,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 593,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 7,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 8,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 8,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 39,
+              "column": 16,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_http_client.js",
+              "line": 590,
+              "column": 22,
+              "inferredName": "",
+              "name": "responseOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "outgoing",
+              "res",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 5,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 571,
+              "column": 17,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 2,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 6,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 7,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "unpipe"
+            ],
+            "key": "unpipe",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 521,
+              "column": 19,
+              "inferredName": "",
+              "name": "onunpipe"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 635,
+              "column": 17,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 593,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 39,
+              "column": 16,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 590,
+              "column": 22,
+              "inferredName": "",
+              "name": "responseOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "res",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 571,
+              "column": 17,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 7,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 8,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "unpipe"
+            ],
+            "key": "unpipe",
+            "level": 7,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 521,
+              "column": 19,
+              "inferredName": "",
+              "name": "onunpipe"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 7,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 635,
+              "column": 17,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 7,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 593,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 7,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 8,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 8,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 39,
+              "column": 16,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_http_client.js",
+              "line": 590,
+              "column": 22,
+              "inferredName": "",
+              "name": "responseOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "incoming",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 5,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 571,
+              "column": 17,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "_httpMessage",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "socket",
+              "read"
+            ],
+            "key": "read",
+            "level": 1,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "unpipe"
+            ],
+            "key": "unpipe",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 521,
+              "column": 19,
+              "inferredName": "",
+              "name": "onunpipe"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 635,
+              "column": 17,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 593,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_readableState",
+              "pipes",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 39,
+              "column": 16,
+              "inferredName": "",
+              "name": "onend"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 590,
+              "column": 22,
+              "inferredName": "",
+              "name": "responseOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 2,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 571,
+              "column": 17,
+              "inferredName": "",
+              "name": "ondata"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 3,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "outgoing",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "outgoing",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 6,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "_httpMessage",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "socket",
+              "read"
+            ],
+            "key": "read",
+            "level": 2,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 3,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "outgoing",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "outgoing",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "outgoing",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "outgoing",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "outgoing",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 6,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "_httpMessage",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "connection",
+              "read"
+            ],
+            "key": "read",
+            "level": 2,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 3,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 3,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "outgoing",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "outgoing",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "outgoing",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "outgoing",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "outgoing",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 6,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "_httpMessage",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "client",
+              "read"
+            ],
+            "key": "read",
+            "level": 2,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 33,
+              "column": 20,
+              "inferredName": "",
+              "name": "onconnect"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 34,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "_events",
+              "response"
+            ],
+            "key": "response",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/http-one-connection.client.js",
+              "line": 35,
+              "column": 21,
+              "inferredName": "",
+              "name": "onresponse"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "_events",
+              "prefinish"
+            ],
+            "key": "prefinish",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 599,
+              "column": 27,
+              "inferredName": "",
+              "name": "requestOnPrefinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 4,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "socket",
+              "read"
+            ],
+            "key": "read",
+            "level": 3,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 4,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 4,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 4,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "connection",
+              "read"
+            ],
+            "key": "read",
+            "level": 3,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 4,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 65,
+              "column": 26,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 7,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 8,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 8,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 7,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 7,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 7,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 8,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 8,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 7,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 7,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 7,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 7,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 7,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 8,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 7,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 7,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 7,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "agent",
+              "sockets",
+              "google.com:80:",
+              "0",
+              "read"
+            ],
+            "key": "read",
+            "level": 6,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 49,
+              "column": 24,
+              "inferredName": "",
+              "name": "parserOnHeaders"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 62,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnHeadersComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "2"
+            ],
+            "key": "2",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 127,
+              "column": 21,
+              "inferredName": "",
+              "name": "parserOnBody"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "3"
+            ],
+            "key": "3",
+            "level": 3,
+            "info": {
+              "file": "_http_common.js",
+              "line": 146,
+              "column": 32,
+              "inferredName": "",
+              "name": "parserOnMessageComplete"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "end",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "end",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "_http_client.js",
+              "line": 415,
+              "column": 20,
+              "inferredName": "",
+              "name": "socketOnEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "free"
+            ],
+            "key": "free",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 240,
+              "column": 17,
+              "inferredName": "",
+              "name": "onFree"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 246,
+              "column": 18,
+              "inferredName": "",
+              "name": "onClose"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "_http_client.js",
+              "line": 337,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketCloseListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "agentRemove"
+            ],
+            "key": "agentRemove",
+            "level": 5,
+            "info": {
+              "file": "_http_agent.js",
+              "line": 255,
+              "column": 19,
+              "inferredName": "",
+              "name": "onRemove"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "drain"
+            ],
+            "key": "drain",
+            "level": 5,
+            "info": {
+              "file": "internal/http.js",
+              "line": 3,
+              "column": 16,
+              "inferredName": "",
+              "name": "ondrain"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 381,
+              "column": 28,
+              "inferredName": "",
+              "name": "socketErrorListener"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_events",
+              "data"
+            ],
+            "key": "data",
+            "level": 5,
+            "info": {
+              "file": "_http_client.js",
+              "line": 433,
+              "column": 21,
+              "inferredName": "",
+              "name": "socketOnData"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 6,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "socket",
+              "read"
+            ],
+            "key": "read",
+            "level": 4,
+            "info": {
+              "file": "_stream_readable.js",
+              "line": 290,
+              "column": 34,
+              "inferredName": "Readable.read",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "incoming",
+              "req",
+              "parser",
+              "onIncoming"
+            ],
+            "key": "onIncoming",
+            "level": 3,
+            "info": {
+              "file": "_http_client.js",
+              "line": 492,
+              "column": 31,
+              "inferredName": "",
+              "name": "parserOnIncomingClient"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          }
+        ],
+        "socket": {
+          "connecting": false,
+          "_asyncId": 10,
+          "_hadError": false,
+          "_handle": {
+            "type": "object",
+            "proto": "TCP",
+            "val": "<deleted>"
+          },
+          "_parent": null,
+          "_host": {
+            "type": "string",
+            "len": 10,
+            "included": 10,
+            "val": "google.com"
+          },
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": true,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 9,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": true,
+          "allowHalfOpen": false,
+          "destroyed": false,
+          "_bytesDispatched": 55,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": null,
+          "_server": null,
+          "parser": {
+            "type": "object",
+            "proto": "HTTPParser",
+            "val": "<deleted>"
+          },
+          "_httpMessage": {
+            "domain": null,
+            "_events": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "_eventsCount": 4,
+            "output": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "outputEncodings": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "outputCallbacks": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "outputSize": 0,
+            "writable": true,
+            "_last": true,
+            "upgrading": false,
+            "chunkedEncoding": false,
+            "shouldKeepAlive": false,
+            "useChunkedEncodingByDefault": false,
+            "sendDate": false,
+            "_removedConnection": false,
+            "_removedContLen": false,
+            "_removedTE": false,
+            "_contentLength": 0,
+            "_hasBody": true,
+            "_trailer": {
+              "type": "string",
+              "len": 0,
+              "included": 0,
+              "val": ""
+            },
+            "finished": true,
+            "_headerSent": true,
+            "socket": {
+              "type": "object",
+              "proto": "Socket",
+              "val": "<deleted>"
+            },
+            "connection": {
+              "type": "object",
+              "proto": "Socket",
+              "val": "<deleted>"
+            },
+            "_header": {
+              "type": "string",
+              "len": 55,
+              "included": 55,
+              "val": "GET / HTTP/1.1\r\nHost: google.com\r\nConnection: close\r\n\r\n"
+            },
+            "_onPendingData": null,
+            "agent": {
+              "type": "object",
+              "proto": "Agent",
+              "val": "<deleted>"
+            },
+            "method": {
+              "type": "string",
+              "len": 3,
+              "included": 3,
+              "val": "GET"
+            },
+            "path": {
+              "type": "string",
+              "len": 1,
+              "included": 1,
+              "val": "/"
+            },
+            "_ended": false,
+            "res": {
+              "type": "object",
+              "proto": "IncomingMessage",
+              "val": "<deleted>"
+            },
+            "timeoutCb": null,
+            "upgradeOrConnect": false,
+            "parser": {
+              "type": "object",
+              "proto": "HTTPParser",
+              "val": "<deleted>"
+            },
+            "maxHeadersCount": null,
+            "proto": "ClientRequest"
+          },
+          "read": {
+            "type": "function",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_consuming": true,
+          "proto": "Socket"
+        },
+        "incoming": {
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": true,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 2,
+          "socket": {
+            "type": "object",
+            "proto": "Socket",
+            "val": "<deleted>"
+          },
+          "connection": {
+            "type": "object",
+            "proto": "Socket",
+            "val": "<deleted>"
+          },
+          "httpVersionMajor": 1,
+          "httpVersionMinor": 1,
+          "httpVersion": {
+            "type": "string",
+            "len": 3,
+            "included": 3,
+            "val": "1.1"
+          },
+          "complete": false,
+          "headers": {
+            "cache-control": {
+              "type": "string",
+              "len": 7,
+              "included": 7,
+              "val": "private"
+            },
+            "content-type": {
+              "type": "string",
+              "len": 24,
+              "included": 24,
+              "val": "text/html; charset=UTF-8"
+            },
+            "location": {
+              "type": "string",
+              "len": 55,
+              "included": 55,
+              "val": "http://www.google.de/?gfe_rd=cr&ei=-tLcWPHZCeHJXsDcoaAI"
+            },
+            "content-length": {
+              "type": "string",
+              "len": 3,
+              "included": 3,
+              "val": "256"
+            },
+            "date": {
+              "type": "string",
+              "len": 29,
+              "included": 29,
+              "val": "Thu, 30 Mar 2017 09:42:18 GMT"
+            },
+            "connection": {
+              "type": "string",
+              "len": 5,
+              "included": 5,
+              "val": "close"
+            },
+            "proto": "Object"
+          },
+          "rawHeaders": {
+            "type": "object",
+            "proto": "Array",
+            "val": "<deleted>"
+          },
+          "trailers": {
+            "type": "object",
+            "proto": "Object",
+            "val": "<deleted>"
+          },
+          "rawTrailers": {
+            "type": "object",
+            "proto": "Array",
+            "val": "<deleted>"
+          },
+          "upgrade": false,
+          "url": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "method": null,
+          "statusCode": 302,
+          "statusMessage": {
+            "type": "string",
+            "len": 5,
+            "included": 5,
+            "val": "Found"
+          },
+          "client": {
+            "type": "object",
+            "proto": "Socket",
+            "val": "<deleted>"
+          },
+          "_consuming": false,
+          "_dumped": false,
+          "req": {
+            "type": "object",
+            "proto": "ClientRequest",
+            "val": "<deleted>"
+          },
+          "proto": "IncomingMessage"
+        }
+      },
+      "before": [
+        82131128,
+        103200009,
+        104038288
+      ],
+      "beforeStacks": [
+        [
+          "at Socket.socketOnData (_http_client.js:440:20)",
+          "at emitOne (events.js:121:13)",
+          "at Socket.emit (events.js:216:7)",
+          "at readableAddChunk (_stream_readable.js:195:18)",
+          "at Socket.Readable.push (_stream_readable.js:153:10)",
+          "at TCP.onread (net.js:603:20)"
+        ],
+        [
+          "at Socket.socketOnData (_http_client.js:440:20)",
+          "at emitOne (events.js:121:13)",
+          "at Socket.emit (events.js:216:7)",
+          "at readableAddChunk (_stream_readable.js:195:18)",
+          "at Socket.Readable.push (_stream_readable.js:153:10)",
+          "at TCP.onread (net.js:603:20)"
+        ],
+        [
+          "at Socket.socketOnData (_http_client.js:440:20)",
+          "at emitOne (events.js:121:13)",
+          "at Socket.emit (events.js:216:7)",
+          "at readableAddChunk (_stream_readable.js:195:18)",
+          "at Socket.Readable.push (_stream_readable.js:153:10)",
+          "at TCP.onread (net.js:603:20)"
+        ]
+      ],
+      "after": [
+        85073197,
+        103657294,
+        104409207
+      ],
+      "afterStacks": [
+        [
+          "at Socket.socketOnData (_http_client.js:440:20)",
+          "at emitOne (events.js:121:13)",
+          "at Socket.emit (events.js:216:7)",
+          "at readableAddChunk (_stream_readable.js:195:18)",
+          "at Socket.Readable.push (_stream_readable.js:153:10)"
+        ],
+        [
+          "at Socket.socketOnData (_http_client.js:440:20)",
+          "at emitOne (events.js:121:13)",
+          "at Socket.emit (events.js:216:7)",
+          "at readableAddChunk (_stream_readable.js:195:18)",
+          "at Socket.Readable.push (_stream_readable.js:153:10)"
+        ],
+        [
+          "at Socket.socketOnData (_http_client.js:440:20)",
+          "at emitOne (events.js:121:13)",
+          "at Socket.emit (events.js:216:7)",
+          "at readableAddChunk (_stream_readable.js:195:18)",
+          "at Socket.Readable.push (_stream_readable.js:153:10)"
+        ]
+      ],
+      "destroy": [
+        109936876
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    16,
+    {
+      "id": 16,
+      "type": "TCPCONNECTWRAP",
+      "triggerId": 10,
+      "init": [
+        26695037
+      ],
+      "initStack": [
+        "at connect (net.js:921:26)",
+        "at emitLookup (net.js:1072:7)",
+        "at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:83:16)",
+        "at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:99:10)"
+      ],
+      "resource": null,
+      "before": [
+        53889711
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        54650710
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        54768038
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    26,
+    {
+      "id": 26,
+      "type": "SHUTDOWNWRAP",
+      "triggerId": 10,
+      "init": [
+        107952313
+      ],
+      "initStack": [
+        "at Socket.onSocketFinish (net.js:285:26)",
+        "at emitNone (events.js:111:13)",
+        "at Socket.emit (events.js:213:7)",
+        "at finishMaybe (_stream_writable.js:530:14)",
+        "at endWritable (_stream_writable.js:540:3)"
+      ],
+      "resource": null,
+      "before": [
+        108527289
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        108599536
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        110458934
+      ],
+      "destroyStack": []
+    }
+  ]
+]
