@@ -4,6 +4,8 @@ const TcpConnectionProcessor = require('./lib/tcp-connection.processor')
 const TcpClientConnectionProcessor = require('./lib/tcp-client-connection.processor')
 const HttpConnectionProcessor = require('./lib/http-connection.processor')
 const HttpClientConnectionProcessor = require('./lib/http-client-connection.processor')
+const TlsClientConnectionProcessor = require('./lib/tls-client-connection.processor')
+const TlsConnectionProcessor = require('./lib/tls-connection.processor')
 
 /**
  * Processes all network related activities found inside the supplied `activities`.
@@ -24,6 +26,8 @@ function process({ activities, includeActivities = false }) {
     , TcpClientConnectionProcessor
     , HttpConnectionProcessor
     , HttpClientConnectionProcessor
+    , TlsConnectionProcessor
+    , TlsClientConnectionProcessor
   ]
   return processActivities({ activities, processors, includeActivities })
 }
@@ -34,5 +38,7 @@ module.exports = {
   , TcpClientConnectionProcessor
   , HttpConnectionProcessor
   , HttpClientConnectionProcessor
+  , TlsConnectionProcessor
+  , TlsClientConnectionProcessor
   , process
 }

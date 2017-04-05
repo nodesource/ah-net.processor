@@ -1,0 +1,3882 @@
+[
+  [
+    11,
+    {
+      "id": 11,
+      "type": "TCPWRAP",
+      "triggerId": 1,
+      "init": [
+        30784513
+      ],
+      "initStack": [
+        "at createServerHandle (net.js:1249:14)",
+        "at Server._listen2 (net.js:1306:14)",
+        "at listen (net.js:1362:10)",
+        "at doListening (net.js:1478:7)",
+        "at _combinedTickCallback (internal/process/next_tick.js:98:11)"
+      ],
+      "resource": {
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 11,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 11,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 11,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 2,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 11,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onconnection"
+            ],
+            "key": "onconnection",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 1504,
+              "column": 21,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 11,
+            "arguments": "<Inaccessible>"
+          }
+        ],
+        "owner": {
+          "_contexts": 0,
+          "requestCert": false,
+          "rejectUnauthorized": true,
+          "ciphers": {
+            "type": "string",
+            "len": 14,
+            "included": 14,
+            "val": "AECDH-NULL-SHA"
+          },
+          "honorCipherOrder": true,
+          "sessionIdContext": {
+            "type": "string",
+            "len": 32,
+            "included": 32,
+            "val": "e15221401a28960f6e4b321b42ca7266"
+          },
+          "_sharedCreds": {
+            "context": {
+              "proto": "SecureContext"
+            }
+          },
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 3,
+          "_connections": 1,
+          "_asyncId": 11,
+          "_handle": {
+            "bytesRead": 0,
+            "_externalStream": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "fd": 16,
+            "reading": false,
+            "owner": {
+              "type": "object",
+              "proto": "Server",
+              "val": "<deleted>"
+            },
+            "onread": null,
+            "onconnection": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "writeQueueSize": 0,
+            "proto": "TCP"
+          },
+          "_usingSlaves": false,
+          "_slaves": {
+            "type": "object",
+            "proto": "Array",
+            "val": "<deleted>"
+          },
+          "_unref": false,
+          "allowHalfOpen": false,
+          "pauseOnConnect": false,
+          "_connectionKey": {
+            "type": "string",
+            "len": 7,
+            "included": 7,
+            "val": "6:::1:0"
+          },
+          "proto": "Server"
+        }
+      },
+      "before": [
+        127330157
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        130566086
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        136350220
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    14,
+    {
+      "id": 14,
+      "type": "TCPWRAP",
+      "triggerId": 11,
+      "init": [
+        127241890
+      ],
+      "initStack": [],
+      "resource": {
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 2,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 77,
+              "column": 24,
+              "inferredName": "",
+              "name": "onsocketEnd"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 403,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 2,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 535,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 14,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 14,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 14,
+            "arguments": null
+          }
+        ],
+        "owner": {
+          "connecting": false,
+          "_asyncId": 14,
+          "_hadError": false,
+          "_handle": null,
+          "_parent": null,
+          "_host": null,
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": false,
+          "domain": null,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 6,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": false,
+          "allowHalfOpen": false,
+          "destroyed": true,
+          "_bytesDispatched": 5,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": {
+            "_contexts": 0,
+            "requestCert": false,
+            "rejectUnauthorized": true,
+            "ciphers": {
+              "type": "string",
+              "len": 14,
+              "included": 14,
+              "val": "AECDH-NULL-SHA"
+            },
+            "honorCipherOrder": true,
+            "sessionIdContext": {
+              "type": "string",
+              "len": 32,
+              "included": 32,
+              "val": "e15221401a28960f6e4b321b42ca7266"
+            },
+            "_sharedCreds": {
+              "context": {
+                "proto": "SecureContext"
+              }
+            },
+            "domain": null,
+            "_events": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "_eventsCount": 3,
+            "_connections": 0,
+            "_asyncId": 11,
+            "_handle": null,
+            "_usingSlaves": false,
+            "_slaves": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "_unref": false,
+            "allowHalfOpen": false,
+            "pauseOnConnect": false,
+            "_connectionKey": {
+              "type": "string",
+              "len": 7,
+              "included": 7,
+              "val": "6:::1:0"
+            },
+            "proto": "Server"
+          },
+          "_server": {
+            "type": "object",
+            "proto": "Server",
+            "val": "<deleted>"
+          },
+          "_idleNext": null,
+          "_idlePrev": null,
+          "_idleTimeout": -1,
+          "proto": "Socket"
+        }
+      },
+      "before": [
+        148244955
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        148606064
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        149283675
+      ],
+      "destroyStack": []
+    }
+  ],
+  [
+    15,
+    {
+      "id": 15,
+      "type": "TLSWRAP",
+      "triggerId": 11,
+      "init": [
+        128687537
+      ],
+      "initStack": [
+        "at TLSSocket._wrapHandle (_tls_wrap.js:380:18)",
+        "at new TLSSocket (_tls_wrap.js:290:18)",
+        "at Server.<anonymous> (_tls_wrap.js:836:18)",
+        "at emitOne (events.js:126:20)",
+        "at Server.emit (events.js:216:7)"
+      ],
+      "resource": {
+        "functions": [
+          {
+            "path": [
+              "owner",
+              "_tlsOptions",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_tlsOptions",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_tlsOptions",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_tlsOptions",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_tlsOptions",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_tlsOptions",
+              "SNICallback"
+            ],
+            "key": "SNICallback",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 971,
+              "column": 20,
+              "inferredName": "",
+              "name": "SNICallback"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "close",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 396,
+              "column": 27,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "close",
+              "1"
+            ],
+            "key": "1",
+            "level": 3,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 866,
+              "column": 31,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 2,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_socketEnd"
+            ],
+            "key": "_socketEnd",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 599,
+              "column": 40,
+              "inferredName": "TLSSocket._tlsError",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "timeout"
+            ],
+            "key": "timeout",
+            "level": 2,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "secure"
+            ],
+            "key": "secure",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 848,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_events",
+              "_tlsError"
+            ],
+            "key": "_tlsError",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 880,
+              "column": 35,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 77,
+              "column": 24,
+              "inferredName": "",
+              "name": "onsocketEnd"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "_socketEnd",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 403,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 535,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 6,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parent",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 77,
+              "column": 24,
+              "inferredName": "",
+              "name": "onsocketEnd"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "_socketEnd",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 403,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 535,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onhandshakestart"
+            ],
+            "key": "onhandshakestart",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 449,
+              "column": 27,
+              "inferredName": "ssl.onhandshakestart",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onhandshakedone"
+            ],
+            "key": "onhandshakedone",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 450,
+              "column": 26,
+              "inferredName": "ssl.onhandshakedone",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onclienthello"
+            ],
+            "key": "onclienthello",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 451,
+              "column": 24,
+              "inferredName": "ssl.onclienthello",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "oncertcb"
+            ],
+            "key": "oncertcb",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 452,
+              "column": 19,
+              "inferredName": "ssl.oncertcb",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onnewsession"
+            ],
+            "key": "onnewsession",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 453,
+              "column": 23,
+              "inferredName": "ssl.onnewsession",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_handle",
+              "onerror"
+            ],
+            "key": "onerror",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 474,
+              "column": 24,
+              "inferredName": "ssl.onerror",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 77,
+              "column": 24,
+              "inferredName": "",
+              "name": "onsocketEnd"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "_socketEnd",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 3,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 403,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 535,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "_parent",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 2,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 3,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 4,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 3,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 3,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 77,
+              "column": 24,
+              "inferredName": "",
+              "name": "onsocketEnd"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "_socketEnd",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 403,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 535,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 6,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 7,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 7,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "owner",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 6,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parent",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 3,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_handle",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 4,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "end"
+            ],
+            "key": "end",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "finish",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 259,
+              "column": 23,
+              "inferredName": "",
+              "name": "onSocketFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "finish",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 77,
+              "column": 24,
+              "inferredName": "",
+              "name": "onsocketEnd"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "_socketEnd",
+              "0"
+            ],
+            "key": "0",
+            "level": 5,
+            "info": {
+              "file": "net.js",
+              "line": 313,
+              "column": 20,
+              "inferredName": "",
+              "name": "onSocketEnd"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "_socketEnd",
+              "1"
+            ],
+            "key": "1",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 403,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "connect"
+            ],
+            "key": "connect",
+            "level": 4,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 4,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 535,
+              "column": 29,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_writableState",
+              "onwrite"
+            ],
+            "key": "onwrite",
+            "level": 4,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 369,
+              "column": 16,
+              "inferredName": "",
+              "name": "bound onwrite"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_writableState",
+              "corkedRequestsFree",
+              "finish"
+            ],
+            "key": "finish",
+            "level": 5,
+            "info": {
+              "file": "_stream_writable.js",
+              "line": 551,
+              "column": 23,
+              "inferredName": "",
+              "name": "bound onCorkedFinish"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "connection",
+              "0"
+            ],
+            "key": "0",
+            "level": 6,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 835,
+              "column": 32,
+              "inferredName": "",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "connection",
+              "1"
+            ],
+            "key": "1",
+            "level": 6,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 71,
+              "column": 23,
+              "inferredName": "",
+              "name": "onconnection"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "error"
+            ],
+            "key": "error",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 56,
+              "column": 18,
+              "inferredName": "",
+              "name": "onerror"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "listening"
+            ],
+            "key": "listening",
+            "level": 5,
+            "info": {
+              "file": "/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.server.js",
+              "line": 57,
+              "column": 22,
+              "inferredName": "",
+              "name": "onlistening"
+            },
+            "id": 15,
+            "arguments": null
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "_parentWrap",
+              "_server",
+              "_events",
+              "close"
+            ],
+            "key": "close",
+            "level": 5,
+            "info": {
+              "file": "events.js",
+              "line": 314,
+              "column": 20,
+              "inferredName": "",
+              "name": "bound onceWrapper"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "onread"
+            ],
+            "key": "onread",
+            "level": 2,
+            "info": {
+              "file": "net.js",
+              "line": 585,
+              "column": 15,
+              "inferredName": "",
+              "name": "onread"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "onhandshakestart"
+            ],
+            "key": "onhandshakestart",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 449,
+              "column": 27,
+              "inferredName": "ssl.onhandshakestart",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "onhandshakedone"
+            ],
+            "key": "onhandshakedone",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 450,
+              "column": 26,
+              "inferredName": "ssl.onhandshakedone",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "onclienthello"
+            ],
+            "key": "onclienthello",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 451,
+              "column": 24,
+              "inferredName": "ssl.onclienthello",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "oncertcb"
+            ],
+            "key": "oncertcb",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 452,
+              "column": 19,
+              "inferredName": "ssl.oncertcb",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "onnewsession"
+            ],
+            "key": "onnewsession",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 453,
+              "column": 23,
+              "inferredName": "ssl.onnewsession",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "ssl",
+              "onerror"
+            ],
+            "key": "onerror",
+            "level": 2,
+            "info": {
+              "file": "_tls_wrap.js",
+              "line": 474,
+              "column": 24,
+              "inferredName": "ssl.onerror",
+              "name": ""
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_idleNext",
+              "_timer",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "timers.js",
+              "line": 214,
+              "column": 22,
+              "inferredName": "",
+              "name": "listOnTimeout"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          },
+          {
+            "path": [
+              "owner",
+              "_idlePrev",
+              "_timer",
+              "0"
+            ],
+            "key": "0",
+            "level": 3,
+            "info": {
+              "file": "timers.js",
+              "line": 214,
+              "column": 22,
+              "inferredName": "",
+              "name": "listOnTimeout"
+            },
+            "id": 15,
+            "arguments": "<Inaccessible>"
+          }
+        ],
+        "owner": {
+          "_tlsOptions": {
+            "secureContext": {
+              "context": {
+                "proto": "SecureContext"
+              },
+              "proto": "SecureContext"
+            },
+            "isServer": true,
+            "server": {
+              "type": "object",
+              "proto": "Server",
+              "val": "<deleted>"
+            },
+            "requestCert": false,
+            "rejectUnauthorized": true,
+            "handshakeTimeout": 120000,
+            "SNICallback": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "proto": "Object"
+          },
+          "_secureEstablished": false,
+          "_securePending": false,
+          "_newSessionPending": false,
+          "_controlReleased": false,
+          "_SNICallback": null,
+          "servername": null,
+          "npnProtocol": null,
+          "alpnProtocol": null,
+          "authorized": false,
+          "authorizationError": null,
+          "encrypted": true,
+          "_events": {
+            "type": "object",
+            "proto": null,
+            "val": "<deleted>"
+          },
+          "_eventsCount": 8,
+          "connecting": false,
+          "_asyncId": 15,
+          "_hadError": false,
+          "_handle": {
+            "bytesRead": 0,
+            "_externalStream": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "fd": 17,
+            "_parent": {
+              "type": "object",
+              "proto": "TCP",
+              "val": "<deleted>"
+            },
+            "_parentWrap": {
+              "type": "object",
+              "proto": "Socket",
+              "val": "<deleted>"
+            },
+            "_secureContext": {
+              "context": {
+                "proto": "SecureContext"
+              },
+              "proto": "SecureContext"
+            },
+            "reading": true,
+            "owner": {
+              "type": "object",
+              "proto": "TLSSocket",
+              "val": "<deleted>"
+            },
+            "onread": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "writeQueueSize": 1,
+            "onhandshakestart": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "onhandshakedone": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "onclienthello": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "oncertcb": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "onnewsession": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "lastHandshakeTime": 250,
+            "handshakes": 0,
+            "onerror": {
+              "type": "function",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "proto": "TLSWrap",
+            "_parentId": 14
+          },
+          "_parent": {
+            "type": "object",
+            "proto": "Socket",
+            "val": "<deleted>"
+          },
+          "_host": null,
+          "_readableState": {
+            "type": "object",
+            "proto": "ReadableState",
+            "val": "<deleted>"
+          },
+          "readable": true,
+          "domain": null,
+          "_writableState": {
+            "type": "object",
+            "proto": "WritableState",
+            "val": "<deleted>"
+          },
+          "writable": true,
+          "allowHalfOpen": false,
+          "destroyed": false,
+          "_bytesDispatched": 0,
+          "_sockname": null,
+          "_pendingData": null,
+          "_pendingEncoding": {
+            "type": "string",
+            "len": 0,
+            "included": 0,
+            "val": ""
+          },
+          "server": {
+            "_contexts": 0,
+            "requestCert": false,
+            "rejectUnauthorized": true,
+            "ciphers": {
+              "type": "string",
+              "len": 14,
+              "included": 14,
+              "val": "AECDH-NULL-SHA"
+            },
+            "honorCipherOrder": true,
+            "sessionIdContext": {
+              "type": "string",
+              "len": 32,
+              "included": 32,
+              "val": "e15221401a28960f6e4b321b42ca7266"
+            },
+            "_sharedCreds": {
+              "context": {
+                "proto": "SecureContext"
+              }
+            },
+            "domain": null,
+            "_events": {
+              "type": "object",
+              "proto": null,
+              "val": "<deleted>"
+            },
+            "_eventsCount": 4,
+            "_connections": 1,
+            "_asyncId": 11,
+            "_handle": null,
+            "_usingSlaves": false,
+            "_slaves": {
+              "type": "object",
+              "proto": "Array",
+              "val": "<deleted>"
+            },
+            "_unref": false,
+            "allowHalfOpen": false,
+            "pauseOnConnect": false,
+            "_connectionKey": {
+              "type": "string",
+              "len": 7,
+              "included": 7,
+              "val": "6:::1:0"
+            },
+            "proto": "Server"
+          },
+          "_server": null,
+          "ssl": {
+            "type": "object",
+            "proto": "TLSWrap",
+            "val": "<deleted>"
+          },
+          "_requestCert": false,
+          "_rejectUnauthorized": true,
+          "_idleTimeout": 120000,
+          "_idleNext": {
+            "type": "object",
+            "proto": "TimersList",
+            "val": "<deleted>"
+          },
+          "_idlePrev": {
+            "type": "object",
+            "proto": "TimersList",
+            "val": "<deleted>"
+          },
+          "_idleStart": 243,
+          "proto": "TLSSocket"
+        }
+      },
+      "before": [
+        136459826,
+        146559329
+      ],
+      "beforeStacks": [
+        [],
+        []
+      ],
+      "after": [
+        136599311,
+        147397958
+      ],
+      "afterStacks": [
+        [],
+        []
+      ]
+    }
+  ],
+  [
+    19,
+    {
+      "id": 19,
+      "type": "SHUTDOWNWRAP",
+      "triggerId": 14,
+      "init": [
+        135725759
+      ],
+      "initStack": [
+        "at Socket.onSocketFinish (net.js:285:26)",
+        "at emitNone (events.js:116:20)",
+        "at Socket.emit (events.js:213:7)",
+        "at finishMaybe (_stream_writable.js:530:14)",
+        "at afterWrite (_stream_writable.js:402:3)"
+      ],
+      "resource": null,
+      "before": [
+        136146072
+      ],
+      "beforeStacks": [
+        []
+      ],
+      "after": [
+        136247815
+      ],
+      "afterStacks": [
+        []
+      ],
+      "destroy": [
+        136393139
+      ],
+      "destroyStack": []
+    }
+  ]
+]
