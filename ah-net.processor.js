@@ -14,12 +14,12 @@ const TlsConnectionProcessor = require('./lib/tls-connection.processor')
  * Lots of activity data is omitted from the result, therefore make sure to include
  * activities if you need it.
  *
- * @name process
+ * @name processNetwork
  * @function
  * @param {Map.<String|Number, Object}> activities the activities mapped by id
  * @param {Boolean} [includeActivities=false] if `true` the activities are attached to each processed operation
  */
-function process({ activities, includeActivities = false }) {
+function processNetwork({ activities, includeActivities = false }) {
   const processors = [
       TcpListenProcessor
     , TcpConnectionProcessor
@@ -40,5 +40,5 @@ module.exports = {
   , HttpClientConnectionProcessor
   , TlsConnectionProcessor
   , TlsClientConnectionProcessor
-  , process
+  , processNetwork
 }

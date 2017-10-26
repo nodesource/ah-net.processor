@@ -12,50 +12,59 @@ Processes ah-net data obtained from async resources related to network operation
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
--   [API](#api)
-    -   [process](#process)
-    -   [TcpListenProcessor](#tcplistenprocessor)
-    -   [tcpListenProcessor.process](#tcplistenprocessorprocess)
-    -   [Sample Return Value](#sample-return-value)
-    -   [TcpListenOperation](#tcplistenoperation)
-    -   [tcpListenOperation.\_processListen](#tcplistenoperation%5C_processlisten)
-    -   [tcpListenOperation.summary](#tcplistenoperationsummary)
-    -   [Properties Specific to `server.listen`](#properties-specific-to-serverlisten)
-    -   [TcpConnectionProcessor](#tcpconnectionprocessor)
-    -   [tcpConnectionProcessor.process](#tcpconnectionprocessorprocess)
-    -   [Sample Return Value](#sample-return-value-1)
-    -   [TcpClientConnectionProcessor](#tcpclientconnectionprocessor)
-    -   [tcpClientConnectionProcessor.process](#tcpclientconnectionprocessorprocess)
-    -   [Operations](#operations)
-    -   [Sample Return Value](#sample-return-value-2)
-    -   [socketInitFrame0Rx](#socketinitframe0rx)
-    -   [getaddrinfoInitFrame0Rx](#getaddrinfoinitframe0rx)
-    -   [connectInitFrame0Rx](#connectinitframe0rx)
-    -   [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx)
-    -   [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx-1)
-    -   [TcpClientConnectionOperation](#tcpclientconnectionoperation)
-    -   [tcpClientConnectionOperation.\_processSocket](#tcpclientconnectionoperation%5C_processsocket)
-    -   [tcpClientConnectionOperation.\_processGetAddrInfo](#tcpclientconnectionoperation%5C_processgetaddrinfo)
-    -   [tcpClientConnectionOperation.\_processConnect](#tcpclientconnectionoperation%5C_processconnect)
-    -   [tcpClientConnectionOperation.\_processHttpParser](#tcpclientconnectionoperation%5C_processhttpparser)
-    -   [tcpClientConnectionOperation.\_processShutdown](#tcpclientconnectionoperation%5C_processshutdown)
-    -   [tcpClientConnectionOperation.summary](#tcpclientconnectionoperationsummary)
-    -   [Properties Specific to `tcp client connection`](#properties-specific-to-tcp-client-connection)
-    -   [httpParserInitFrame0Rx](#httpparserinitframe0rx)
-    -   [HttpConnectionProcessor](#httpconnectionprocessor)
-    -   [httpConnectionProcessor.process](#httpconnectionprocessorprocess)
-    -   [Sample Return Value](#sample-return-value-3)
-    -   [TcpConnectionOperation](#tcpconnectionoperation)
-    -   [tcpConnectionOperation.\_processSocket](#tcpconnectionoperation%5C_processsocket)
-    -   [tcpConnectionOperation.\_processShutdown](#tcpconnectionoperation%5C_processshutdown)
-    -   [tcpConnectionOperation.\_processHttpParser](#tcpconnectionoperation%5C_processhttpparser)
-    -   [tcpConnectionOperation.summary](#tcpconnectionoperationsummary)
-    -   [Properties Specific to `tcp connection`](#properties-specific-to-tcp-connection)
-    -   [processHttpParser](#processhttpparser)
-    -   [HttpClientConnectionProcessor](#httpclientconnectionprocessor)
-    -   [httpClientConnectionProcessor.process](#httpclientconnectionprocessorprocess)
-    -   [Sample Return Value](#sample-return-value-4)
--   [License](#license)
+- [API](#api)
+  - [processNetwork](#processnetwork)
+  - [TcpListenProcessor](#tcplistenprocessor)
+  - [tcpListenProcessor.process](#tcplistenprocessorprocess)
+  - [Sample Return Value](#sample-return-value)
+  - [TcpListenOperation](#tcplistenoperation)
+  - [tcpListenOperation.\_processListen](#tcplistenoperation%5C_processlisten)
+  - [tcpListenOperation.summary](#tcplistenoperationsummary)
+  - [Properties Specific to `server.listen`](#properties-specific-to-serverlisten)
+  - [TcpConnectionProcessor](#tcpconnectionprocessor)
+  - [tcpConnectionProcessor.process](#tcpconnectionprocessorprocess)
+  - [Sample Return Value](#sample-return-value-1)
+  - [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx)
+  - [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx-1)
+  - [TcpConnectionOperation](#tcpconnectionoperation)
+  - [tcpConnectionOperation.\_processSocket](#tcpconnectionoperation%5C_processsocket)
+  - [tcpConnectionOperation.\_processShutdown](#tcpconnectionoperation%5C_processshutdown)
+  - [tcpConnectionOperation.\_processHttpParser](#tcpconnectionoperation%5C_processhttpparser)
+  - [tcpConnectionOperation.\_processTls](#tcpconnectionoperation%5C_processtls)
+  - [tcpConnectionOperation.summary](#tcpconnectionoperationsummary)
+  - [Properties Specific to `tcp connection`](#properties-specific-to-tcp-connection)
+  - [TcpClientConnectionProcessor](#tcpclientconnectionprocessor)
+  - [tcpClientConnectionProcessor.process](#tcpclientconnectionprocessorprocess)
+  - [Operations](#operations)
+  - [Sample Return Value](#sample-return-value-2)
+  - [socketInitFrame0Rx](#socketinitframe0rx)
+  - [getaddrinfoInitFrame0Rx](#getaddrinfoinitframe0rx)
+  - [connectInitFrame0Rx](#connectinitframe0rx)
+  - [TcpClientConnectionOperation](#tcpclientconnectionoperation)
+  - [tcpClientConnectionOperation.\_processSocket](#tcpclientconnectionoperation%5C_processsocket)
+  - [tcpClientConnectionOperation.\_processGetAddrInfo](#tcpclientconnectionoperation%5C_processgetaddrinfo)
+  - [tcpClientConnectionOperation.\_processConnect](#tcpclientconnectionoperation%5C_processconnect)
+  - [tcpClientConnectionOperation.\_processHttpParser](#tcpclientconnectionoperation%5C_processhttpparser)
+  - [tcpClientConnectionOperation.\_processTls](#tcpclientconnectionoperation%5C_processtls)
+  - [tcpClientConnectionOperation.\_processShutdown](#tcpclientconnectionoperation%5C_processshutdown)
+  - [tcpClientConnectionOperation.summary](#tcpclientconnectionoperationsummary)
+  - [Properties Specific to `tcp client connection`](#properties-specific-to-tcp-client-connection)
+  - [processHttpParser](#processhttpparser)
+  - [httpParserInitFrame0Rx](#httpparserinitframe0rx)
+  - [HttpConnectionProcessor](#httpconnectionprocessor)
+  - [httpConnectionProcessor.process](#httpconnectionprocessorprocess)
+  - [Sample Return Value](#sample-return-value-3)
+  - [HttpClientConnectionProcessor](#httpclientconnectionprocessor)
+  - [httpClientConnectionProcessor.process](#httpclientconnectionprocessorprocess)
+  - [Sample Return Value](#sample-return-value-4)
+  - [tlsSocketInitFrame0Rx](#tlssocketinitframe0rx)
+  - [TlsClientConnectionProcessor](#tlsclientconnectionprocessor)
+  - [tlsClientConnectionProcessor.process](#tlsclientconnectionprocessorprocess)
+  - [Sample Return Value](#sample-return-value-5)
+  - [TlsConnectionProcessor](#tlsconnectionprocessor)
+  - [tlsConnectionProcessor.process](#tlsconnectionprocessorprocess)
+  - [Sample Return Value](#sample-return-value-6)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -63,7 +72,7 @@ Processes ah-net data obtained from async resources related to network operation
 
 <!-- Generated by documentation.js. Update this documentation by updating the source code. -->
 
-### process
+### processNetwork
 
 Processes all network related activities found inside the supplied `activities`.
 Groups them into operations and pulls out meaningful data for each.
@@ -292,7 +301,7 @@ Code at net.js:932:
 
 The 3rd frame from the top tells us where the connection was created.
 
-TODO: this may be different when we create a socket with the slighly lower leve
+TODO: this may be different when we create a socket with the slighly lower level
 API (see: <https://nodejs.org/api/net.html#net_class_net_socket>)
 Therefore we need to test/adapt for this case as well.
 
@@ -345,13 +354,19 @@ We can clearly see here that it is triggered by the address lookup.
 The frame1 regex only works in that case as well, i.e. if in some
 cases no lookup is performed we need to write a smaller processor.
 
-Sample init stack of tls client connect:
+Sample init stack of tls client connect (old):
 
     "at TLSWrap.methodProxy [as connect6] (_tls_wrap.js:327:33)",
     "at connect (net.js:923:26)",
     "at emitLookup (net.js:1072:7)",
     "at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:83:16)",
     "at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)"
+
+Updated to latest Node.js:
+
+    "at internalConnect (net.js:918:26)",
+    "at GetAddrInfoReqWrap.emitLookup [as callback] (net.js:1077:7)",
+    "at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:100:10)"
 
 It is basically the same as a tcp connect init except we have an extra tls
 related frame. Therefore we use the same regexes, move one frame down
