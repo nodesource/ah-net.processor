@@ -1,6 +1,6 @@
 {
   "name": "ah-net.processor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Processes ah-net data obtained from async resources related to network operations.",
   "main": "ah-net.processor.js",
   "scripts": {
