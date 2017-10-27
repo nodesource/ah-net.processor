@@ -1,6 +1,4 @@
-# ah-net.processor
-
-[![build status](https://secure.travis-ci.org/thlorenz/ah-net.processor.png)](http://travis-ci.org/thlorenz/ah-net.processor)
+# ah-net.processor [![build status](https://secure.travis-ci.org/thlorenz/ah-net.processor.png)](http://travis-ci.org/thlorenz/ah-net.processor)
 
 Processes ah-net data obtained from async resources related to network operations.
 
