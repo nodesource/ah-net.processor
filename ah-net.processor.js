@@ -16,8 +16,9 @@ const TlsConnectionProcessor = require('./lib/tls-connection.processor')
  *
  * @name processNetwork
  * @function
- * @param {Map.<String|Number, Object}> activities the activities mapped by id
- * @param {Boolean} [includeActivities=false] if `true` the activities are attached to each processed operation
+ * @param {Object} $0
+ * @param {Map.<string, Object>} $0.activities a map of async activities hashed by id
+ * @param {boolean} [$0.includeActivities=false] if `true` the actual activities are appended to the output
  */
 function processNetwork({ activities, includeActivities = false }) {
   const processors = [
