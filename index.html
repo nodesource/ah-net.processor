@@ -1,0 +1,2741 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>  | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='max-width-4 mx-auto'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'></h3>
+          <div class='mb1'><code></code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#processnetwork'
+                  class="">
+                  processNetwork
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcplistenprocessor'
+                  class="">
+                  TcpListenProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcplistenprocessorprocess'
+                  class="">
+                  tcpListenProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcplistenoperation'
+                  class="">
+                  TcpListenOperation
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcplistenoperation_processlisten'
+                  class="">
+                  tcpListenOperation._processListen
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcplistenoperationsummary'
+                  class="">
+                  tcpListenOperation.summary
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionprocessor'
+                  class="">
+                  TcpConnectionProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionprocessorprocess'
+                  class="">
+                  tcpConnectionProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#socketshutdowninitframe0rx'
+                  class="">
+                  socketShutdownInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#socketshutdowninitframe0rx'
+                  class="">
+                  socketShutdownInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionoperation'
+                  class="">
+                  TcpConnectionOperation
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionoperation_processsocket'
+                  class="">
+                  tcpConnectionOperation._processSocket
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionoperation_processshutdown'
+                  class="">
+                  tcpConnectionOperation._processShutdown
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionoperation_processhttpparser'
+                  class="">
+                  tcpConnectionOperation._processHttpParser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionoperation_processtls'
+                  class="">
+                  tcpConnectionOperation._processTls
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpconnectionoperationsummary'
+                  class="">
+                  tcpConnectionOperation.summary
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#processhttpparser'
+                  class="">
+                  processHttpParser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionprocessor'
+                  class="">
+                  TcpClientConnectionProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionprocessorprocess'
+                  class="">
+                  tcpClientConnectionProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#socketinitframe0rx'
+                  class="">
+                  socketInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getaddrinfoinitframe0rx'
+                  class="">
+                  getaddrinfoInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#connectinitframe0rx'
+                  class="">
+                  connectInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation'
+                  class="">
+                  TcpClientConnectionOperation
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation_processsocket'
+                  class="">
+                  tcpClientConnectionOperation._processSocket
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation_processgetaddrinfo'
+                  class="">
+                  tcpClientConnectionOperation._processGetAddrInfo
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation_processconnect'
+                  class="">
+                  tcpClientConnectionOperation._processConnect
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation_processhttpparser'
+                  class="">
+                  tcpClientConnectionOperation._processHttpParser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation_processtls'
+                  class="">
+                  tcpClientConnectionOperation._processTls
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperation_processshutdown'
+                  class="">
+                  tcpClientConnectionOperation._processShutdown
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tcpclientconnectionoperationsummary'
+                  class="">
+                  tcpClientConnectionOperation.summary
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#httpparserinitframe0rx'
+                  class="">
+                  httpParserInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#httpconnectionprocessor'
+                  class="">
+                  HttpConnectionProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#httpconnectionprocessorprocess'
+                  class="">
+                  httpConnectionProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#httpclientconnectionprocessor'
+                  class="">
+                  HttpClientConnectionProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#httpclientconnectionprocessorprocess'
+                  class="">
+                  httpClientConnectionProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tlssocketinitframe0rx'
+                  class="">
+                  tlsSocketInitFrame0Rx
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tlsclientconnectionprocessor'
+                  class="">
+                  TlsClientConnectionProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tlsclientconnectionprocessorprocess'
+                  class="">
+                  tlsClientConnectionProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tlsconnectionprocessor'
+                  class="">
+                  TlsConnectionProcessor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tlsconnectionprocessorprocess'
+                  class="">
+                  tlsConnectionProcessor.process
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='processnetwork'>
+      processNetwork
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processes all network related activities found inside the supplied <code>activities</code>.
+Groups them into operations and pulls out meaningful data for each.</p>
+<p>Lots of activity data is omitted from the result, therefore make sure to include
+activities if you need it.</p>
+
+
+  <div class='pre p1 fill-light mt0'>processNetwork($0: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>$0.activities</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>
+                  </td>
+                  <td class='break-word'><span>a map of async activities hashed by id
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>$0.includeActivities</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>?</code>
+                  
+                    (default <code>false</code>)
+                  </td>
+                  <td class='break-word'><span>if 
+<code>true</code>
+ the actual activities are appended to the output
+</span></td>
+                </tr>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcplistenprocessor'>
+      TcpListenProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an tcp server.listen data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new TcpListenProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcplistenprocessorprocess'>
+      tcpListenProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processing algorithm is the same as the <a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessorprocess">one for the readFile processor</a>.</p>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/one-net.createServer.listen.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpListenProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcplistenoperation'>
+      TcpListenOperation
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processes a group of async activities that represent a tcp server listen operation.
+It is used by the <a href="#tcplistenprocessor">TcpListenProcessor</a> as part of <code>process</code>.</p>
+<p>Even though the methods here including some private ones are documented, the <code>TcpListenOperation</code>
+should not be instantiated and used directly.</p>
+<p>Parameters are the same as that of the <a href="https://nodesource.github.io/ah-fs.processor/#readfileoperation">ah-fs <code>ReadFileOperation</code></a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TcpListenOperation()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcplistenoperation_processlisten'>
+      tcpListenOperation._processListen
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The listen contains a lot of useful information about the <code>server.listen()</code>
+operation.</p>
+<p>The last frame of the init stack tells us where <code>.listen</code> was called and the
+callbacks registered with the server can be found here has well.</p>
+<p>If strings were included when the activity resource was captured, we can also
+obtain the connection key here.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpListenOperation._processListen(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the listen step, pre-processed by the 
+<code>ServerListenProcessor</code>
+.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcplistenoperationsummary'>
+      tcpListenOperation.summary
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the summary of processing the group into an operation.</p>
+<p>The general properties <code>lifeCycle</code> and <code>createdAt</code> are documented as part of
+the ah-fs.processor <code>ReadFileProcessor</code>.
+Therefore learn more <a href="https://nodesource.github.io/ah-fs.processor/#general-operation-properties">here</a>.</p>
+<p>The parameters <code>{ separateFunctions, mergeFunctions }</code> and return value
+are documented as part of the <a href="https://nodesource.github.io/ah-fs.processor/#readfileoperationsummary">ah-fs.processor <code>ReadFileProcessor</code></a>
+as well.</p>
+<h2>Properties Specific to <code>server.listen</code></h2>
+<ul>
+<li><strong>listen</strong>: see <code>tcpListenOperation._processListen</code></li>
+</ul>
+
+
+  <div class='pre p1 fill-light mt0'>tcpListenOperation.summary()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionprocessor'>
+      TcpConnectionProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an tcp server connection data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new TcpConnectionProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionprocessorprocess'>
+      tcpConnectionProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processing algorithm is the same as the <a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessorprocess">one for the readFile processor</a>.</p>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/one-connection.server.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpConnectionProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='socketshutdowninitframe0rx'>
+      socketShutdownInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of socket shutdown:</p>
+<pre><code>"at Socket.onSocketFinish (net.js:240:26)",
+"at emitNone (events.js:86:13)",
+"at Socket.emit (events.js:186:7)",
+"at finishMaybe (_stream_writable.js:509:14)",
+"at endWritable (_stream_writable.js:519:3)"
+</code></pre>
+<p>Code at net.js:240:</p>
+<p><code>var err = this._handle.shutdown(req);</code></p>
+
+
+  <div class='pre p1 fill-light mt0'>socketShutdownInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='socketshutdowninitframe0rx'>
+      socketShutdownInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of socket shutdown,
+it is the same as the socket shutdown on the server side:</p>
+<pre><code>"at Socket.onSocketFinish (net.js:240:26)",
+"at emitNone (events.js:86:13)",
+"at Socket.emit (events.js:186:7)",
+"at finishMaybe (_stream_writable.js:509:14)",
+"at endWritable (_stream_writable.js:519:3)"
+</code></pre>
+<p>Code at net.js:240:</p>
+<p><code>var err = this._handle.shutdown(req);</code></p>
+
+
+  <div class='pre p1 fill-light mt0'>socketShutdownInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionoperation'>
+      TcpConnectionOperation
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processes a group of async activities that represent a tcp server
+connection operation.
+It is used by the <a href="#tcpconnectionprocessor">TcpConnectionProcessor</a> and
+the <a href="#httpconnectionprocessor">HttpConnectionProcessor</a> as part of <code>process</code>.</p>
+<p>Even though the methods here including some private ones are documented, the <code>TcpConnectionOperation</code>
+should not be instantiated and used directly.</p>
+<p>Parameters are the same as that of the <a href="https://nodesource.github.io/ah-fs.processor/#readfileoperation">ah-fs <code>ReadFileOperation</code></a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TcpConnectionOperation()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionoperation_processsocket'>
+      tcpConnectionOperation._processSocket
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The tcp socket is created by core to service a client connection.
+It has user functions attached which we extract.</p>
+<p>The <code>created</code> timestamp helps us define the life cycle of the connection, as it starts
+when the socket is created and ends when the related shutdown is destroyed.
+Usually we also see two before and after timestamps but those are mainly only related to the
+inner workings of core and are ignored for now.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpConnectionOperation._processSocket(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the socket connection, pre-processed by the 
+<code>TcpConnectionProcessor</code>
+.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionoperation_processshutdown'>
+      tcpConnectionOperation._processShutdown
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>We only obtain the ids and the life cycle information of the shutdown resource.
+We do have an initStack, but that just points to core code.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpConnectionOperation._processShutdown(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the shutdown of the tcp server, pre-processed by the 
+<code>TcpConnectionProcessor</code>
+.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionoperation_processhttpparser'>
+      tcpConnectionOperation._processHttpParser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function is only used when we are dealing with an http connection which
+has an http parser.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpConnectionOperation._processHttpParser(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the http parser
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionoperation_processtls'>
+      tcpConnectionOperation._processTls
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function is only used when we are dealing with a tls connection.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpConnectionOperation._processTls(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the tls aspect of the connection
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpconnectionoperationsummary'>
+      tcpConnectionOperation.summary
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the summary of processing the group into an operation.</p>
+<p>The general properties <code>lifeCycle</code> and <code>createdAt</code> are documented as part of
+the ah-fs.processor <code>ReadFileProcessor</code>.
+Therefore learn more <a href="https://nodesource.github.io/ah-fs.processor/#general-operation-properties">here</a>.</p>
+<p>The parameters <code>{ separateFunctions, mergeFunctions }</code> and return value
+are documented as part of the <a href="https://nodesource.github.io/ah-fs.processor/#readfileoperationsummary">ah-fs.processor <code>ReadFileProcessor</code></a>
+as well.</p>
+<h2>Properties Specific to <code>tcp connection</code></h2>
+<ul>
+<li><strong>socket</strong>: see <code>tcpConnectionOperation._processSocket</code></li>
+<li><strong>httpParser</strong>: see <code>tcpConnectionOperation._processHttpParser</code></li>
+<li><strong>shutdown</strong>: see <code>tcpConnectionOperation._processShutdown</code></li>
+</ul>
+
+
+  <div class='pre p1 fill-light mt0'>tcpConnectionOperation.summary()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='processhttpparser'>
+      processHttpParser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The http parser resource gives us a huge amount of information.
+We have access to the socket here (same as we process in _processSocket).
+The socket allows grouping by the but also is captured at a point where it
+has the _httpMessage (unlike the socket we process above).</p>
+<p>We also have access to the _httpMessage and the incoming message here.
+We do pick and choose only a few of those as to not overwhelm the user, on
+top of that the ah-net pre-processor already removed some info in order to
+keep the data a decent size.
+Ergo here we could get lots more data in the future should we need to.</p>
+
+
+  <div class='pre p1 fill-light mt0'>processHttpParser(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the http parser of an http server
+or client, pre-processed by the 
+<code>HttpConnectionProcessor</code>
+ or 
+<code>HttpClientConnectionProcessor</code>
+.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionprocessor'>
+      TcpClientConnectionProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an <code>net.connect</code> data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new TcpClientConnectionProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionprocessorprocess'>
+      tcpClientConnectionProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processes the supplied async activities into client connection operations.</p>
+<h2>Operations</h2>
+<p>Here we consider full operation connect operations only, i.e. we group
+together 4 operations.</p>
+<ul>
+<li><strong>socket</strong>: has data about the connection socket being created</li>
+<li><strong>getaddrinfo</strong>: has data about the dns lookup of the server address</li>
+<li><strong>connect</strong>: has data about the established the connection, it is
+alive as long as data is transferred between client and server</li>
+<li><strong>shutdown</strong>: has data about the shutdown of the connection after all
+data was transferred</li>
+</ul>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/one-connection.client.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='socketinitframe0rx'>
+      socketInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of socket intialization that was created via
+<code>net.connect()</code>:</p>
+<pre><code>"at Socket.connect (net.js:932:40)",
+"at Object.exports.connect.exports.createConnection (net.js:75:35)",
+"at Object.&#x3C;anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/client:19:4)",
+"at Module._compile (module.js:571:32)",
+"at Object.Module._extensions..js (module.js:580:10)"
+</code></pre>
+<p>Code at net.js:932:</p>
+<p><code>this._handle = pipe ? new Pipe() : new TCP();</code></p>
+<p>The 3rd frame from the top tells us where the connection was created.</p>
+<p>TODO: this may be different when we create a socket with the slighly lower level
+API (see: <a href="https://nodejs.org/api/net.html#net_class_net_socket">https://nodejs.org/api/net.html#net_class_net_socket</a>)
+Therefore we need to test/adapt for this case as well.</p>
+
+
+  <div class='pre p1 fill-light mt0'>socketInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getaddrinfoinitframe0rx'>
+      getaddrinfoInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of getAddrInfo lookup:</p>
+<pre><code>"at lookup (dns.js:182:19)",
+"at lookupAndConnect (net.js:1053:3)",
+"at Socket.connect (net.js:948:5)",
+"at Object.exports.connect.exports.createConnection (net.js:75:35)",
+"at Object.&#x3C;anonymous> (/Volumes/d/dev/js/async-hooks/ah-net/scenarios/one-connection/client:19:4)"
+</code></pre>
+<p>Code at dns.js:182</p>
+<p><code>var err = cares.getaddrinfo(req, hostname, family, hints);</code></p>
+<p>Code at net.js 1053:</p>
+<p><code>lookup(host, dnsopts, function emitLookup(err, ip, addressType)</code></p>
+<p>Sample init stack of getAddrInfo lookup for TLS connections:</p>
+<pre><code>"at lookup (dns.js:182:19)",
+"at lookupAndConnect (net.js:1053:3)",
+"at TLSSocket.Socket.connect (net.js:996:5)",
+"at Object.exports.connect (_tls_wrap.js:1078:12)",
+"at Socket.onserverListening (/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.client.js:91:10)"
+</code></pre>
+<p>Code at net.js:996</p>
+<p><code>lookupAndConnect(this, options);</code></p>
+<p>In both cases the bottom parts are part of the Socket connect stack and last
+in stack tells us where that connection was created.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getaddrinfoInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='connectinitframe0rx'>
+      connectInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of tcp client connect:</p>
+<pre><code>"at connect (net.js:873:26)",
+"at emitLookup (net.js:1023:7)",
+"at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:62:16)",
+"at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:81:10)"
+</code></pre>
+<p>Code at net.js:873
+<code>err = self._handle.connect(req, address, port);</code></p>
+<p>We can clearly see here that it is triggered by the address lookup.
+The frame1 regex only works in that case as well, i.e. if in some
+cases no lookup is performed we need to write a smaller processor.</p>
+<p>Sample init stack of tls client connect (old):</p>
+<pre><code>"at TLSWrap.methodProxy [as connect6] (_tls_wrap.js:327:33)",
+"at connect (net.js:923:26)",
+"at emitLookup (net.js:1072:7)",
+"at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:83:16)",
+"at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)"
+</code></pre>
+<p>Updated to latest Node.js:</p>
+<pre><code>"at internalConnect (net.js:918:26)",
+"at GetAddrInfoReqWrap.emitLookup [as callback] (net.js:1077:7)",
+"at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:100:10)"
+</code></pre>
+<p>It is basically the same as a tcp connect init except we have an extra tls
+related frame. Therefore we use the same regexes, move one frame down</p>
+
+
+  <div class='pre p1 fill-light mt0'>connectInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation'>
+      TcpClientConnectionOperation
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processes a group of async activities that represent a tcp client
+connection operation.
+It is used by the
+<a href="#tcpclientconnectionprocessor">TcpClientConnectionProcessor</a>
+and <a href="#httpclientconnectionprocessor">HttpClientConnectionProcessor</a> as part of <code>process</code>.</p>
+<p>Even though the methods here including some private ones are documented, the <code>TcpConnectionOperation</code>
+should not be instantiated and used directly.</p>
+<p>Parameters are the same as that of the <a href="https://nodesource.github.io/ah-fs.processor/#readfileoperation">ah-fs <code>ReadFileOperation</code></a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TcpClientConnectionOperation()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation_processsocket'>
+      tcpClientConnectionOperation._processSocket
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The socket creation activity has three important information points.</p>
+<p>We can glean from the stack trace where the client connection was created.
+We also take the init timestamp to be the beginning of the life of the
+client connection.
+On top of that the associated user functions were attached to the owner
+as event listeners.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation._processSocket(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the 
+<em>establish socket</em>
+ step
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation_processgetaddrinfo'>
+      tcpClientConnectionOperation._processGetAddrInfo
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The dns resolution operation (GetAddrInfo) doesn't give us much info, however it
+gives us another option to get at the line of code that established the
+socket connection, i.e. called <code>connect</code>.</p>
+<p>We only use this option if we couldn't get that information via <code>_processSocket</code>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation._processGetAddrInfo(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the dns lookup step
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation_processconnect'>
+      tcpClientConnectionOperation._processConnect
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The established connection gives us no useful info, so we just record its ids
+and move on.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation._processConnect(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the established connection
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation_processhttpparser'>
+      tcpClientConnectionOperation._processHttpParser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function is only used when we are dealing with an http connection which
+has an http parser.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation._processHttpParser(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the http parser
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation_processtls'>
+      tcpClientConnectionOperation._processTls
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function is only used when we are dealing with a tls connection which.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation._processTls(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the tls wrap
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperation_processshutdown'>
+      tcpClientConnectionOperation._processShutdown
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>As is the case for the <code>TcpConnectionOperation</code> we can only obtain the ids
+and the life cycle information of the shutdown resource.
+We do have an initStack, but that just points to core code.</p>
+<p>However we also pull the <code>destroyed</code> timestamp from it in order to establish the
+full lifetime of the tcp client connection which ends when its shutdown completes.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation._processShutdown(info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    information about the shutdown of the tcp client connection
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tcpclientconnectionoperationsummary'>
+      tcpClientConnectionOperation.summary
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the summary of processing the group into an operation.</p>
+<p>The general properties <code>lifeCycle</code> and <code>createdAt</code> are documented as part of
+the ah-fs.processor <code>ReadFileProcessor</code>.
+Therefore learn more <a href="https://nodesource.github.io/ah-fs.processor/#general-operation-properties">here</a>.</p>
+<p>The parameters <code>{ separateFunctions, mergeFunctions }</code> and return value
+are documented as part of the <a href="https://nodesource.github.io/ah-fs.processor/#readfileoperationsummary">ah-fs.processor <code>ReadFileProcessor</code></a>
+as well.</p>
+<h2>Properties Specific to <code>tcp client connection</code></h2>
+<ul>
+<li><strong>socket</strong>: see <code>tcpClientConnectionOperation._processSocket</code></li>
+<li><strong>getaddrinfo</strong>: see <code>tcpClientConnectionOperation._processGetAddrInfo</code></li>
+<li><strong>connect</strong>: see <code>tcpClientConnectionOperation._processConnect</code></li>
+<li><strong>httpparser</strong>: see <code>tcpClientConnectionOperation._processHttpParser</code></li>
+<li><strong>tls</strong>: see <code>tcpClientConnectionOperation._processTls</code></li>
+<li><strong>shutdown</strong>: see <code>tcpClientConnectionOperation._processShutdown</code></li>
+</ul>
+
+
+  <div class='pre p1 fill-light mt0'>tcpClientConnectionOperation.summary()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='httpparserinitframe0rx'>
+      httpParserInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of http parser we are interested in:</p>
+<pre><code>"at Server.connectionListener (_http_server.js:302:10)",
+"at emitOne (events.js:121:13)",
+"at Server.emit (events.js:216:7)",
+"at TCP.onconnection (net.js:1535:8)"
+</code></pre>
+<p>Code at _http_server.js:302:</p>
+<p><code>parser.reinitialize(HTTPParser.REQUEST);</code></p>
+<p>The parser we aren't interested in is allocated right before
+at _http_server.js:301:</p>
+<p><code>var parser = parsers.alloc();</code></p>
+
+
+  <div class='pre p1 fill-light mt0'>httpParserInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='httpconnectionprocessor'>
+      HttpConnectionProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an http server connection data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new HttpConnectionProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='httpconnectionprocessorprocess'>
+      httpConnectionProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processing algorithm is the same as the <a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessorprocess">one for the readFile processor</a>.</p>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/http.one-connection.server.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>httpConnectionProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='httpclientconnectionprocessor'>
+      HttpClientConnectionProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an http client connection data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new HttpClientConnectionProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='httpclientconnectionprocessorprocess'>
+      httpClientConnectionProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processing algorithm is the same as the <a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessorprocess">one for the readFile processor</a>.</p>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/http.one-connection.client.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>httpClientConnectionProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tlssocketinitframe0rx'>
+      tlsSocketInitFrame0Rx
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sample init stack of tls socket that was created via
+<code>tls.connect</code>:</p>
+<pre><code>"at TLSSocket._wrapHandle (_tls_wrap.js:372:42)",
+"at new TLSSocket (_tls_wrap.js:290:18)",
+"at Object.exports.connect (_tls_wrap.js:1051:16)",
+"at Socket.onserverListening (/Volumes/d/dev/js/async-hooks/ah-net/test/tls-one-connection.client.js:91:10)",
+"at emitOne (events.js:126:20)"
+</code></pre>
+<p>Code at net.js:372:</p>
+<p><code>handle = options.pipe ? new Pipe() : new TCP();</code></p>
+<p>The 4th frame from the top tells use where it was created.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tlsSocketInitFrame0Rx</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tlsclientconnectionprocessor'>
+      TlsClientConnectionProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an tls client connection data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new TlsClientConnectionProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tlsclientconnectionprocessorprocess'>
+      tlsClientConnectionProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processing algorithm is the same as the <a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessorprocess">one for the readFile processor</a>.</p>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/tls.one-connection.noshutdown.client.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tlsClientConnectionProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tlsconnectionprocessor'>
+      TlsConnectionProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Instantiates an tls server connection data processor to process data collected via
+<a href="https://github.com/nodesource/ah-net">nodesource/ah-net</a></p>
+<p>Parameters and return value are congruent to the ones explained in
+<a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessor">ReadFileProcessor</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>new TlsConnectionProcessor()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tlsconnectionprocessorprocess'>
+      tlsConnectionProcessor.process
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Processing algorithm is the same as the <a href="https://nodesource.github.io/ah-fs.processor/#readfileprocessorprocess">one for the readFile processor</a>.</p>
+<h2>Sample Return Value</h2>
+<p>For a sample return value please consult the <a href="https://github.com/nodesource/ah-net.processor/blob/master/test/tls.one-connection.server.js">related tests</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>tlsConnectionProcessor.process()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
