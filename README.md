@@ -1,6 +1,6 @@
-# ah-net.processor [![build status](https://secure.travis-ci.org/thlorenz/ah-net.processor.png)](http://travis-ci.org/thlorenz/ah-net.processor)
+# ah-net.processor [![build status](https://secure.travis-ci.org/nodesource/ah-net.processor.svg)](http://travis-ci.org/nodesource/ah-net.processor)
 
-Processes ah-net data obtained from async resources related to network operations.
+Processes [ah-net](https://github.com/nodesource/ah-net) data obtained from async resources related to network operations.
 
 ## Installation
 
@@ -22,15 +22,6 @@ Processes ah-net data obtained from async resources related to network operation
   - [TcpConnectionProcessor](#tcpconnectionprocessor)
   - [tcpConnectionProcessor.process](#tcpconnectionprocessorprocess)
   - [Sample Return Value](#sample-return-value-1)
-  - [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx)
-  - [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx-1)
-  - [TcpConnectionOperation](#tcpconnectionoperation)
-  - [tcpConnectionOperation.\_processSocket](#tcpconnectionoperation%5C_processsocket)
-  - [tcpConnectionOperation.\_processShutdown](#tcpconnectionoperation%5C_processshutdown)
-  - [tcpConnectionOperation.\_processHttpParser](#tcpconnectionoperation%5C_processhttpparser)
-  - [tcpConnectionOperation.\_processTls](#tcpconnectionoperation%5C_processtls)
-  - [tcpConnectionOperation.summary](#tcpconnectionoperationsummary)
-  - [Properties Specific to `tcp connection`](#properties-specific-to-tcp-connection)
   - [TcpClientConnectionProcessor](#tcpclientconnectionprocessor)
   - [tcpClientConnectionProcessor.process](#tcpclientconnectionprocessorprocess)
   - [Operations](#operations)
@@ -38,6 +29,8 @@ Processes ah-net data obtained from async resources related to network operation
   - [socketInitFrame0Rx](#socketinitframe0rx)
   - [getaddrinfoInitFrame0Rx](#getaddrinfoinitframe0rx)
   - [connectInitFrame0Rx](#connectinitframe0rx)
+  - [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx)
+  - [socketShutdownInitFrame0Rx](#socketshutdowninitframe0rx-1)
   - [TcpClientConnectionOperation](#tcpclientconnectionoperation)
   - [tcpClientConnectionOperation.\_processSocket](#tcpclientconnectionoperation%5C_processsocket)
   - [tcpClientConnectionOperation.\_processGetAddrInfo](#tcpclientconnectionoperation%5C_processgetaddrinfo)
@@ -47,11 +40,18 @@ Processes ah-net data obtained from async resources related to network operation
   - [tcpClientConnectionOperation.\_processShutdown](#tcpclientconnectionoperation%5C_processshutdown)
   - [tcpClientConnectionOperation.summary](#tcpclientconnectionoperationsummary)
   - [Properties Specific to `tcp client connection`](#properties-specific-to-tcp-client-connection)
-  - [processHttpParser](#processhttpparser)
   - [httpParserInitFrame0Rx](#httpparserinitframe0rx)
   - [HttpConnectionProcessor](#httpconnectionprocessor)
   - [httpConnectionProcessor.process](#httpconnectionprocessorprocess)
   - [Sample Return Value](#sample-return-value-3)
+  - [TcpConnectionOperation](#tcpconnectionoperation)
+  - [tcpConnectionOperation.\_processSocket](#tcpconnectionoperation%5C_processsocket)
+  - [tcpConnectionOperation.\_processShutdown](#tcpconnectionoperation%5C_processshutdown)
+  - [tcpConnectionOperation.\_processHttpParser](#tcpconnectionoperation%5C_processhttpparser)
+  - [tcpConnectionOperation.\_processTls](#tcpconnectionoperation%5C_processtls)
+  - [tcpConnectionOperation.summary](#tcpconnectionoperationsummary)
+  - [Properties Specific to `tcp connection`](#properties-specific-to-tcp-connection)
+  - [processHttpParser](#processhttpparser)
   - [HttpClientConnectionProcessor](#httpclientconnectionprocessor)
   - [httpClientConnectionProcessor.process](#httpclientconnectionprocessorprocess)
   - [Sample Return Value](#sample-return-value-4)
@@ -80,7 +80,9 @@ activities if you need it.
 
 **Parameters**
 
--   `includeActivities` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** if `true` the activities are attached to each processed operation (optional, default `false`)
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+    -   `$0.activities` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)&lt;[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)>** a map of async activities hashed by id
+    -   `$0.includeActivities` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** if `true` the actual activities are appended to the output (optional, default `false`)
 
 ### TcpListenProcessor
 
@@ -154,105 +156,6 @@ Processing algorithm is the same as the [one for the readFile processor](https:/
 ### Sample Return Value
 
 For a sample return value please consult the [related tests](https://github.com/nodesource/ah-net.processor/blob/master/test/one-connection.server.js).
-
-### socketShutdownInitFrame0Rx
-
-Sample init stack of socket shutdown:
-
-    "at Socket.onSocketFinish (net.js:240:26)",
-    "at emitNone (events.js:86:13)",
-    "at Socket.emit (events.js:186:7)",
-    "at finishMaybe (_stream_writable.js:509:14)",
-    "at endWritable (_stream_writable.js:519:3)"
-
-Code at net.js:240:
-
-`var err = this._handle.shutdown(req);`
-
-### socketShutdownInitFrame0Rx
-
-Sample init stack of socket shutdown,
-it is the same as the socket shutdown on the server side:
-
-    "at Socket.onSocketFinish (net.js:240:26)",
-    "at emitNone (events.js:86:13)",
-    "at Socket.emit (events.js:186:7)",
-    "at finishMaybe (_stream_writable.js:509:14)",
-    "at endWritable (_stream_writable.js:519:3)"
-
-Code at net.js:240:
-
-`var err = this._handle.shutdown(req);`
-
-### TcpConnectionOperation
-
-Processes a group of async activities that represent a tcp server
-connection operation.
-It is used by the [TcpConnectionProcessor](#tcpconnectionprocessor) and
-the [HttpConnectionProcessor](#httpconnectionprocessor) as part of `process`.
-
-Even though the methods here including some private ones are documented, the `TcpConnectionOperation`
-should not be instantiated and used directly.
-
-Parameters are the same as that of the [ah-fs `ReadFileOperation`](https://nodesource.github.io/ah-fs.processor/#readfileoperation).
-
-### tcpConnectionOperation.\_processSocket
-
-The tcp socket is created by core to service a client connection.
-It has user functions attached which we extract.
-
-The `created` timestamp helps us define the life cycle of the connection, as it starts
-when the socket is created and ends when the related shutdown is destroyed.
-Usually we also see two before and after timestamps but those are mainly only related to the
-inner workings of core and are ignored for now.
-
-**Parameters**
-
--   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the socket connection, pre-processed by the `TcpConnectionProcessor`.
-
-### tcpConnectionOperation.\_processShutdown
-
-We only obtain the ids and the life cycle information of the shutdown resource.
-We do have an initStack, but that just points to core code.
-
-**Parameters**
-
--   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the shutdown of the tcp server, pre-processed by the `TcpConnectionProcessor`.
-
-### tcpConnectionOperation.\_processHttpParser
-
-This function is only used when we are dealing with an http connection which
-has an http parser.
-
-**Parameters**
-
--   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the http parser
-
-### tcpConnectionOperation.\_processTls
-
-This function is only used when we are dealing with a tls connection.
-
-**Parameters**
-
--   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the tls aspect of the connection
-
-### tcpConnectionOperation.summary
-
-Returns the summary of processing the group into an operation.
-
-The general properties `lifeCycle` and `createdAt` are documented as part of
-the ah-fs.processor `ReadFileProcessor`.
-Therefore learn more [here](https://nodesource.github.io/ah-fs.processor/#general-operation-properties).
-
-The parameters `{ separateFunctions, mergeFunctions }` and return value
-are documented as part of the [ah-fs.processor `ReadFileProcessor`](https://nodesource.github.io/ah-fs.processor/#readfileoperationsummary)
-as well.
-
-### Properties Specific to `tcp connection`
-
--   **socket**: see `tcpConnectionOperation._processSocket`
--   **httpParser**: see `tcpConnectionOperation._processHttpParser`
--   **shutdown**: see `tcpConnectionOperation._processShutdown`
 
 ### TcpClientConnectionProcessor
 
@@ -369,6 +272,35 @@ Updated to latest Node.js:
 It is basically the same as a tcp connect init except we have an extra tls
 related frame. Therefore we use the same regexes, move one frame down
 
+### socketShutdownInitFrame0Rx
+
+Sample init stack of socket shutdown,
+it is the same as the socket shutdown on the server side:
+
+    "at Socket.onSocketFinish (net.js:240:26)",
+    "at emitNone (events.js:86:13)",
+    "at Socket.emit (events.js:186:7)",
+    "at finishMaybe (_stream_writable.js:509:14)",
+    "at endWritable (_stream_writable.js:519:3)"
+
+Code at net.js:240:
+
+`var err = this._handle.shutdown(req);`
+
+### socketShutdownInitFrame0Rx
+
+Sample init stack of socket shutdown:
+
+    "at Socket.onSocketFinish (net.js:240:26)",
+    "at emitNone (events.js:86:13)",
+    "at Socket.emit (events.js:186:7)",
+    "at finishMaybe (_stream_writable.js:509:14)",
+    "at endWritable (_stream_writable.js:519:3)"
+
+Code at net.js:240:
+
+`var err = this._handle.shutdown(req);`
+
 ### TcpClientConnectionOperation
 
 Processes a group of async activities that represent a tcp client
@@ -468,24 +400,6 @@ as well.
 -   **tls**: see `tcpClientConnectionOperation._processTls`
 -   **shutdown**: see `tcpClientConnectionOperation._processShutdown`
 
-### processHttpParser
-
-The http parser resource gives us a huge amount of information.
-We have access to the socket here (same as we process in \_processSocket).
-The socket allows grouping by the but also is captured at a point where it
-has the \_httpMessage (unlike the socket we process above).
-
-We also have access to the \_httpMessage and the incoming message here.
-We do pick and choose only a few of those as to not overwhelm the user, on
-top of that the ah-net pre-processor already removed some info in order to
-keep the data a decent size.
-Ergo here we could get lots more data in the future should we need to.
-
-**Parameters**
-
--   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the http parser of an http server
-    or client, pre-processed by the `HttpConnectionProcessor` or `HttpClientConnectionProcessor`.
-
 ### httpParserInitFrame0Rx
 
 Sample init stack of http parser we are interested in:
@@ -519,6 +433,94 @@ Processing algorithm is the same as the [one for the readFile processor](https:/
 ### Sample Return Value
 
 For a sample return value please consult the [related tests](https://github.com/nodesource/ah-net.processor/blob/master/test/http.one-connection.server.js).
+
+### TcpConnectionOperation
+
+Processes a group of async activities that represent a tcp server
+connection operation.
+It is used by the [TcpConnectionProcessor](#tcpconnectionprocessor) and
+the [HttpConnectionProcessor](#httpconnectionprocessor) as part of `process`.
+
+Even though the methods here including some private ones are documented, the `TcpConnectionOperation`
+should not be instantiated and used directly.
+
+Parameters are the same as that of the [ah-fs `ReadFileOperation`](https://nodesource.github.io/ah-fs.processor/#readfileoperation).
+
+### tcpConnectionOperation.\_processSocket
+
+The tcp socket is created by core to service a client connection.
+It has user functions attached which we extract.
+
+The `created` timestamp helps us define the life cycle of the connection, as it starts
+when the socket is created and ends when the related shutdown is destroyed.
+Usually we also see two before and after timestamps but those are mainly only related to the
+inner workings of core and are ignored for now.
+
+**Parameters**
+
+-   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the socket connection, pre-processed by the `TcpConnectionProcessor`.
+
+### tcpConnectionOperation.\_processShutdown
+
+We only obtain the ids and the life cycle information of the shutdown resource.
+We do have an initStack, but that just points to core code.
+
+**Parameters**
+
+-   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the shutdown of the tcp server, pre-processed by the `TcpConnectionProcessor`.
+
+### tcpConnectionOperation.\_processHttpParser
+
+This function is only used when we are dealing with an http connection which
+has an http parser.
+
+**Parameters**
+
+-   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the http parser
+
+### tcpConnectionOperation.\_processTls
+
+This function is only used when we are dealing with a tls connection.
+
+**Parameters**
+
+-   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the tls aspect of the connection
+
+### tcpConnectionOperation.summary
+
+Returns the summary of processing the group into an operation.
+
+The general properties `lifeCycle` and `createdAt` are documented as part of
+the ah-fs.processor `ReadFileProcessor`.
+Therefore learn more [here](https://nodesource.github.io/ah-fs.processor/#general-operation-properties).
+
+The parameters `{ separateFunctions, mergeFunctions }` and return value
+are documented as part of the [ah-fs.processor `ReadFileProcessor`](https://nodesource.github.io/ah-fs.processor/#readfileoperationsummary)
+as well.
+
+### Properties Specific to `tcp connection`
+
+-   **socket**: see `tcpConnectionOperation._processSocket`
+-   **httpParser**: see `tcpConnectionOperation._processHttpParser`
+-   **shutdown**: see `tcpConnectionOperation._processShutdown`
+
+### processHttpParser
+
+The http parser resource gives us a huge amount of information.
+We have access to the socket here (same as we process in \_processSocket).
+The socket allows grouping by the but also is captured at a point where it
+has the \_httpMessage (unlike the socket we process above).
+
+We also have access to the \_httpMessage and the incoming message here.
+We do pick and choose only a few of those as to not overwhelm the user, on
+top of that the ah-net pre-processor already removed some info in order to
+keep the data a decent size.
+Ergo here we could get lots more data in the future should we need to.
+
+**Parameters**
+
+-   `info` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** information about the http parser of an http server
+    or client, pre-processed by the `HttpConnectionProcessor` or `HttpClientConnectionProcessor`.
 
 ### HttpClientConnectionProcessor
 
